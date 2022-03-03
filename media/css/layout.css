@@ -1,0 +1,1231 @@
+/* 와이드 pc */
+
+/* 비주얼 영역 */
+.videoBox {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: absolute
+}
+
+.videoBox::before {
+   content: '';
+   display: block;
+   width: 100%;
+   height: 100%;
+   background: url(../images/visual_bk.png)no-repeat center;
+   background-size: 80%;
+   position: absolute;
+   margin-top: 40px;
+}
+
+#videoBG {
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   width: auto;
+   min-width: 100%;
+   height: auto;
+   min-height: 100%;
+   transform: translateX(-50%) translateY(-50%);
+   z-index: -100;
+}
+
+#imgBG {
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   width: auto;
+   min-width: 100%;
+   height: auto;
+   min-height: 100%;
+   transform: translateX(-50%) translateY(-50%);
+   z-index: -100;
+   display: none
+}
+
+.videoBox>div {
+   text-align: center;
+   position: relative;
+   top: 50%;
+   margin-top: -143.995px;
+   position: relative;
+   overflow: hidden;
+}
+
+.videoBox>div>h2 {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 500;
+   color: #fff;
+   font-size: 6.667rem;
+   animation-name: visualtxt;
+   animation-duration: 2s;
+}
+
+.videoBox>div>h2 span {
+   display: block;
+   font-weight: 700;
+   font-size: 4.889rem;
+   -webkit-text-stroke: 1px #fff;
+   color: rgba(0, 0, 0, 0);
+   animation-name: visualtxt;
+   animation-duration: 1s;
+}
+
+.videoBox>div p {
+   font-weight: 300;
+   font-size: 1.333rem;
+   color: rgba(255, 255, 255, .5);
+   margin-top: 8px;
+   animation-name: visualtxt;
+   animation-duration: 3s;
+}
+
+@keyframes visualtxt {
+   from {
+      transform: translateY(3em);
+   }
+
+   to {
+      transform: translateY(0);
+   }
+}
+
+.down {
+   display: block;
+   font-weight: 300;
+   font-size: 1.25rem;
+   position: absolute;
+   left: 50%;
+   margin-left: -51.21px;
+   bottom: -10px;
+   animation: ani 1s infinite alternate;
+}
+
+@keyframes ani {
+   0% {
+      opacity: 1;
+      color: #fff;
+   }
+
+   100% {
+      opacity: 0.8;
+      color: rgba(255, 255, 255, .8);
+   }
+}
+
+.mousey {
+   width: 3px;
+   padding: 10px 15px;
+   height: 35px;
+   border: 1px solid #fff;
+   border-radius: 25px;
+   position: relative;
+   left: 50%;
+   margin-left: -17.5px;
+   bottom: 93px;
+   background: rgba(255, 255, 255, .5);
+}
+
+.scroller {
+   width: 3px;
+   height: 10px;
+   border-radius: 25%;
+   background-color: #fff;
+   animation-name: mousescroll;
+   animation-duration: 2.2s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes mousescroll {
+   0% {
+      opacity: 0;
+   }
+
+   10% {
+      transform: translateY(0);
+      opacity: 1;
+   }
+
+   100% {
+      transform: translateY(15px);
+      opacity: 0;
+   }
+}
+
+/* 컨텐츠 공통영역 */
+#content {
+   width: auto;
+   background: rgba(0, 0, 0, .8);
+}
+
+#content>div {
+   width: auto;
+   padding: 120px 72px 0;
+   position: relative;
+   overflow: hidden;
+   opacity: 0;
+}
+
+#content h3 {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 600;
+   font-size: 2.222rem;
+   color: #f18101;
+}
+
+#content .phrase {
+   font-weight: 300;
+   margin-top: 32px;
+   line-height: 1.5em;
+}
+
+.morebtn1 {
+   display: block;
+   width: 40px;
+   height: 40px;
+   text-indent: -999px;
+   overflow: hidden;
+   background: url(../images/morebtn1.png)no-repeat;
+   background-size: 40px 40px;
+   transition: all .5s;
+}
+
+.morebtn1:hover {
+   transform: rotate(180deg);
+   background: url(../images/morebtn2.png)no-repeat;
+}
+
+#content .morebtn2 {
+   display: inline-block;
+   padding: 16px 32px;
+   border-radius: 4px;
+   background: #f18101;
+   font-size: 0.889rem;
+   color: #fff;
+   margin-top: 32px;
+   transition: all .5s;
+   position: relative;
+   overflow: hidden;
+}
+
+#content .morebtn2::before {
+   content: '';
+   display: block;
+   width: 100%;
+   height: 100%;
+   border-radius: 80%;
+   background: rgba(255, 255, 255, .15);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transition: all .2s ease;
+   transform: translate(0px, 160%) scale(1.2, 2);
+}
+
+#content .morebtn2:hover::before {
+   transform: translate(0, 0%) scale(1.2, 2);
+}
+
+#content>.scrollevent {
+   opacity: 1;
+   animation-name: scrollevent;
+   animation-duration: 1s;
+}
+
+@keyframes scrollevent {
+   from {
+      transform: translateY(10em);
+   }
+
+   to {
+      transform: translateY(0);
+   }
+}
+
+/* about */
+.about {
+   padding-bottom: 100px;
+}
+
+.about>div.grid {
+   display: grid;
+   gap: 5vw;
+   grid-template-columns: 1fr 1.5fr;
+   align-items: center;
+   margin-bottom: 120px;
+}
+
+.about .topic {
+   overflow: hidden;
+}
+
+.about h3 {
+   float: left;
+}
+
+.about .phrase {
+   text-align: justify;
+}
+
+.about .morebtn1 {
+   float: right;
+   margin-top: 6.4px;
+}
+
+.about ul {
+   display: flex;
+   gap: 1rem;
+   align-items: end;
+}
+
+.about ul li {
+   overflow: hidden;
+   width: 100%;
+   position: relative;
+}
+
+.about ul li:nth-child(1) {
+   border-radius: 9% 23% 3% 29% / 21% 5% 25% 6%;
+}
+
+.about ul li:nth-child(2) {
+   width: 80%;
+   border-radius: 28% 6% 3% 29% / 5% 22% 25% 6%;
+}
+
+.about ul li:nth-child(3) {
+   border-radius: 28% 6% 33% 6% / 5% 22% 7% 29%;
+}
+
+.about ul li img {
+   transition: all .5s;
+   width: 100%;
+}
+
+.about ul li:hover img {
+   transform: scale(1.2);
+}
+
+.about .motion1 {
+   width: 313px;
+   height: 173px;
+   background: url(../images/about_Licon.png)no-repeat;
+   background-size: cover;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+.about .motion2 {
+   width: 92px;
+   height: 81px;
+   background: url(../images/about_Ricon.png)no-repeat;
+   background-size: cover;
+   position: absolute;
+   bottom: 0;
+   left: 47%;
+}
+
+@keyframes aboutmotion {
+   0% {
+      bottom: 25%;
+      left: 0;
+      opacity: 0;
+   }
+
+   10% {
+      opacity: 20;
+      bottom: 14%;
+   }
+
+   100% {
+      left: 47%;
+      transform: rotate(360deg);
+   }
+}
+
+/* about2 */
+#content>div.about2 {
+   height: auto;
+   background: url(../images/about_img2.jpg)no-repeat fixed center;
+   background-size: cover;
+   padding: 100px 72px;
+   display: flex;
+   gap: 4rem;
+   align-items: center;
+}
+
+#content .about2 h3 {
+   color: #fff;
+   width: 50%;
+}
+
+.about2 .phrase {
+   width: 50%;
+   margin-top: 0;
+}
+
+/* unesco */
+.unesco .grid {
+   display: grid;
+   gap: 1rem;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.unesco .grid>div {
+   grid-area: 1/2;
+}
+
+.unesco .topic_area {
+   text-align: right;
+   margin-bottom: 64px;
+}
+
+.unesco ul {
+   display: grid;
+   gap: 1rem;
+}
+
+.unesco ul li {
+   width: auto;
+   height: 350px;
+   overflow: hidden;
+   position: relative;
+   border-radius: 4px;
+}
+
+.unesco ul li:nth-child(1) {
+   background: url(../images/unesco_img1.png)center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.unesco ul li:nth-child(2) {
+   background: url(../images/unesco_img2.png)center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.unesco ul li:nth-child(3) {
+   background: url(../images/unesco_img3.png)center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   grid-area: 2/1;
+}
+
+.unesco ul li:nth-child(4) {
+   background: url(../images/unesco_img4.png)center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   grid-area: 2/2;
+}
+
+.munseom {
+   background: url(../images/unesco_img5.png)center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
+   position: relative;
+   border-radius: 4px;
+}
+
+.unesco dl,
+.munseom dl {
+   padding: 32px 24px;
+   position: absolute;
+   top: 217px;
+   transition: all .5s;
+   height: 100%;
+   width: 100%;
+}
+
+.munseom dl {
+   top: 259px;
+}
+
+.unesco li:hover dl,
+.munseom:hover dl {
+   top: 0;
+   background: rgba(0, 0, 0, .5);
+}
+
+.unesco dt {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 600;
+   font-size: 1.111rem;
+   color: #fff;
+}
+
+.unesco dt span {
+   display: block;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   font-size: 0.778rem;
+   opacity: .5;
+   margin-bottom: 4px;
+   color: #fff;
+}
+
+.unesco dd {
+   color: #fff;
+   opacity: 0;
+}
+
+.unesco li:hover dd,
+.munseom:hover dd {
+   opacity: 1;
+}
+
+.unesco dd:last-child {
+   margin-top: 16px;
+}
+
+.unesco dd:last-child span {
+   margin-right: 16px;
+   color: #118CCF;
+   font-weight: 600;
+   font-size: 0.889rem;
+}
+
+/* geo_brands */
+.geo_brands {
+   text-align: center;
+}
+.geo_brands .phrase{
+   margin: 0 2rem;
+}
+.geo_brands .textarea {
+   position: absolute;
+   left: 50%;
+   margin-left: -16.665%;
+   width: 33.33%;
+   z-index: 10;
+}
+
+.geo_brands h3 {
+   margin-bottom: 32px;
+}
+
+.geo_brands .grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   position: relative;
+   align-items: end;
+}
+
+.geo_brands .area1 li,
+.geo_brands .area3 li {
+   width: auto;
+   height: 370px;
+   overflow: hidden;
+   border-radius: 8px;
+   position: relative;
+}
+
+.geo_brands li:hover,
+.geo_brands .area2:hover {
+   filter: grayscale(100%);
+}
+
+.geo_brands .area1 li:first-of-type {
+   background: url(../images/geo_img1.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-bottom: 1rem;
+}
+
+.geo_brands .area1 li:last-of-type {
+   background: url(../images/geo_img2.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.geo_brands .area2 {
+   width: auto;
+   height: 453px;
+   border-radius: 4px;
+   background: url(../images/geo_img3.png)no-repeat center;
+   background-size: cover;
+   margin-top: 64px;
+   transition: all .5s;
+   overflow: hidden;
+   position: relative;
+}
+
+.geo_brands .area2::before,
+.geo_brands .area1 li::before,
+.geo_brands .area3 li::before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.3);
+   content: '';
+   z-index: 10;
+   transition: transform 0.6s;
+   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+
+.geo_brands .area2:hover::before,
+.geo_brands .area1 li:hover::before,
+.geo_brands .area3 li:hover::before {
+   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+
+.geo_brands .area2:hover dd::before {
+   content: '';
+   display: block;
+   width: 10px;
+   height: 2px;
+   background: rgba(241, 129, 1, 1);
+   position: relative;
+}
+
+.geo_brands .area3 li:first-of-type {
+   background: url(../images/geo_img4.png)no-repeat center;
+   background-size: cover;
+   margin-bottom: 1rem;
+}
+
+.geo_brands .area3 li:last-of-type {
+   background: url(../images/geo_img5.png)no-repeat center;
+   background-size: cover;
+}
+
+.geo_brands dl {
+   padding: 0 32px;
+   text-align: left;
+   position: relative;
+   top: 258px;
+   transition: all .5s;
+}
+
+.geo_brands li:hover dl {
+   top: 110px;
+}
+
+.geo_brands dl dt strong {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   font-size: 1.111rem;
+   color: rgba(255, 255, 255, 1);
+}
+
+.geo_brands dl dt {
+   font-size: 0.778rem;
+   color: rgba(255, 255, 255, .5);
+   line-height: 1.5em;
+}
+
+.geo_brands dl dt span {
+   display: block;
+   font-size: 0.889rem;
+   margin-top: 16px;
+   color: rgba(255, 255, 255, 1);
+}
+
+.geo_brands dl dd {
+   color: #fff;
+   margin-top: 24px;
+   opacity: 0;
+   line-height: 1.5em;
+}
+
+.geo_brands li:hover dd {
+   opacity: 1;
+}
+
+.geo_brands li:hover dd::before {
+   content: '';
+   display: block;
+   width: 10px;
+   height: 2px;
+   background: rgba(241, 129, 1, 1);
+   position: relative;
+}
+
+.geo_brands .area2:hover dd {
+   opacity: 1;
+}
+
+.geo_brands .area2 dl {
+   top: 340px;
+}
+
+.geo_brands .area2:hover dl {
+   top: 140px;
+}
+
+.geo_brands .motion1 {
+   width: 80px;
+   height: 91px;
+   background: url(../images/geo_Licon.png)no-repeat center;
+   background-size: cover;
+   position: absolute;
+   top: 160px;
+   left: 20px;
+}
+
+.geo_brands .motion2 {
+   width: 91px;
+   height: 80px;
+   background: url(../images/geo_Ricon.png)no-repeat center;
+   background-size: cover;
+   position: absolute;
+   bottom: 0;
+   right: 10px;
+}
+
+@keyframes geoani {
+   0% {
+      transform: translateY(-100px) translateX(100px) rotate(360deg);
+      opacity: 0;
+   }
+
+   100% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+      opacity: 1;
+   }
+}
+
+
+/* tourism_video */
+.tourism_video .phrase {
+   text-align: justify;
+}
+
+.tourism_video .grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1rem;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.tourism_video .grid .area1 {
+   position: relative;
+   border-radius: 4px;
+   border: 4px solid rgba(225, 0, 0, 0);
+}
+
+.tourism_video .grid .area1:hover {
+   border: 4px solid rgba(241, 129, 1, .8)
+}
+
+.tourism_video .grid .area1 img {
+   width: 100%;
+}
+
+.tourism_video .grid .area1::before {
+   content: '';
+   display: block;
+   width: 125px;
+   height: 125px;
+   background: url(../images/tourism_yicon.png)no-repeat center;
+   background-size: cover;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin: -61.5px 0 0 -61px;
+   opacity: .8;
+   filter: grayscale(80%);
+   transition: all .5s;
+}
+
+.tourism_video .grid .area1:hover::before {
+   filter: grayscale(0%);
+   transform: rotate(360deg);
+}
+
+.tourism_video ul {
+   display: flex;
+   justify-content: space-between;
+   gap: 1rem;
+}
+
+.tourism_video ul li {
+   width: 100%;
+   position: relative;
+   border-radius: 4px;
+   border: 4px solid rgba(225, 0, 0, 0);
+}
+
+.tourism_video ul li:hover {
+   border: 4px solid rgba(241, 129, 1, .8);
+}
+
+.tourism_video ul li::before {
+   content: '';
+   display: block;
+   width: 92px;
+   height: 92px;
+   background: url(../images/tourism_yicon.png)no-repeat center;
+   background-size: cover;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin: -46.5px 0 0 -46px;
+   opacity: .8;
+   filter: grayscale(80%);
+   transition: all .5s;
+}
+
+.tourism_video ul li:hover::before {
+   filter: grayscale(0%);
+   transform: rotate(360deg);
+}
+
+.tourism_video ul li img {
+   width: 100%;
+}
+
+/* gallery */
+#content .gallery {
+   text-align: center;
+   padding-bottom: 120px;
+}
+
+.gallery h3 {
+   margin-bottom: 64px;
+}
+
+.gallery ul {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 1rem;
+   align-items: center;
+}
+
+.gallery .no1{
+   position: relative;
+   top: -4px;
+}
+
+.gallery ul li {
+   overflow: hidden;
+   position: relative;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.gallery ul li img {
+   transition: all .5s;
+   width: 100%;
+   overflow: hidden;
+}
+
+.gallery ul li:hover img {
+   transform: scale(1.2);
+}
+
+.gallery ul li p {
+   position: absolute;
+   bottom: 0;
+   color: #fff;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   font-size: 1.111rem;
+   margin: 0 16px 16px;
+   text-align: left;
+}
+
+.gallery ul li p span {
+   display: block;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   font-size: 0.778rem;
+   position: relative;
+   left: 24px;
+}
+
+.gallery ul li p span::before {
+   content: '';
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background: url(../images/gallery_licon.png)no-repeat center;
+   background-size: cover;
+   margin-right: 4px;
+   position: absolute;
+   top: 50%;
+   margin-top: -8px;
+   left: -24px;
+}
+
+.gallery .motion1 {
+   width: 116px;
+   height: 221px;
+   background: url(../images/gallery_icon.png)no-repeat center;
+   background-size: cover;
+   position: absolute;
+   bottom: 0;
+   right: 10px;
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+   .videoBox>h2 {
+      font-size: 5.333rem;
+   }
+
+   .videoBox>h2>span {
+      font-size: 4.889rem;
+      margin-top: -108px
+   }
+
+   .mousey {
+      padding: 8px 13px;
+      height: 33px;
+      margin-left: -15.5px;
+   }
+
+   .unesco ul li:nth-child(1) {
+      display: none;
+   }
+
+   .unesco ul li:nth-child(4) {
+      grid-area: 2/1;
+   }
+
+   .unesco ul li:nth-child(3) {
+      display: none;
+   }
+
+   .munseom dl {
+      top: 230px;
+   }
+
+   .geo_brands .area1 li:last-of-type {
+      display: none;
+   }
+
+   .geo_brands .area3 li:last-of-type {
+      display: none;
+   }
+
+   .geo_brands .grid {
+      margin-top: 64px;
+   }
+
+   .geo_brands .textarea {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin: 0;
+      width: 100%;
+   }
+
+   .geo_brands .area2 {
+      margin-top: 0;
+   }
+
+   .geo_brands .motion1 {
+      top: 440px;
+   }
+
+   .tourism_video ul li:last-child {
+      display: none;
+   }
+
+   .about ul li:nth-child(2) {
+      display: none;
+   }
+
+   .about ul li:nth-child(1) {
+      width: 80%
+   }
+   .gallery ul {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+   }
+   .gallery ul li:last-child{
+      display: none;
+   }
+}
+
+
+/* 태블릿 */
+@media screen and (max-width:1024px) {
+   .down {
+      font-size: 1.111rem;
+   }
+
+   .about>div.grid {
+      grid-template-columns: 2fr 1fr;
+   }
+
+   .about .motion1 {
+      width: 223px;
+      height: 123px;
+   }
+
+   .about .motion2 {
+      width: 61px;
+      height: 54px;
+   }
+
+   .about ul li:last-child {
+      display: none;
+   }
+
+   .about ul li:nth-child(1) {
+      width: 253px
+   }
+
+   #content>div.about2 {
+      display: block;
+      padding: 40px;
+   }
+
+   #content .about2 h3 {
+      width: auto;
+      text-align: center;
+   }
+
+   .about2 .phrase {
+      width: auto;
+      margin: 32px;
+      text-align: center;
+   }
+
+   .munseom dl {
+      top: 147px;
+   }
+
+   .geo_brands .grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .geo_brands .area3 li:first-of-type {
+      display: none;
+   }
+
+   .tourism_video .grid {
+      gap: 1rem;
+      margin-bottom: 1rem;
+      align-items: end
+   }
+
+   .tourism_video ul li:nth-child(3) {
+      display: none;
+   }
+
+   .tourism_video .grid .area1::before {
+      width: 92px;
+      height: 92px;
+      margin: -46.5px 0 0 -46px;
+   }
+   .gallery ul {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+   }
+   .gallery ul li:nth-child(3){
+      display: none;
+   }
+}
+
+/* 소형 태블릿 */
+@media screen and (max-width:768px) {
+   .videoBox>div {
+      margin-top: -123.1px;
+   }
+
+   .videoBox>div>h2 {
+      font-size: 5.556rem;
+   }
+
+   .videoBox>div>h2 span {
+      font-size: 4.444rem;
+   }
+
+   .videoBox>div p {
+      font-size: 1rem;
+   }
+
+   #content>div {
+      padding: 100px 40px 0;
+      text-align: center;
+   }
+   #content h3{
+      text-align: center;
+   }
+   #content div .phrase {
+      margin: 24px 5% 0;
+      text-align: center;
+   }
+
+   .about {
+      padding-bottom: 100px;
+   }
+
+   .about h3 {
+      float: none;
+   }
+
+   .about>div.grid {
+      display: block;
+      margin-bottom: 50px;
+   }
+
+   .about ul li:nth-child(1) {
+      width: 253px;
+      margin: 32px auto;
+   }
+
+   .about .morebtn1 {
+      float: none;
+      position: relative;
+      left: 50%;
+      margin: 0 0 16px -20px;
+   }
+   .unesco .topic_area{
+      text-align: center;
+   }
+
+   .unesco .grid {
+      display: block;
+   }
+
+   .unesco ul li:nth-child(4) {
+      grid-area: 1/2;
+   }
+
+   .munseom {
+      display: none;
+   }
+
+   .munseom dl {
+      top: 188px;
+   }
+
+   .tourism_video .grid .area1 {
+      display: none;
+   }
+
+   .tourism_video .grid {
+      display: block;
+      margin-bottom: 64px;
+   }
+   #content .gallery{
+      padding-bottom: 100px;
+   }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   .videoBox>div {
+      margin-top: -100.4px;
+   }
+
+   .videoBox>div>h2 {
+      font-size: 5rem;
+      margin: 0 20px;
+   }
+
+   .videoBox>div>h2 span {
+      font-size: 4rem;
+   }
+
+   .down {
+      bottom: -30px;
+      margin-left: -45.525px;
+   }
+
+   #content>div {
+      padding: 50px 20px 0;
+   }
+
+   #content h3 {
+      text-align: center;
+      float: none;
+      font-size: 1.750rem;
+   }
+
+   .unesco .topic_area {
+      margin-bottom: 32px;
+   }
+
+   .unesco ul li:nth-child(4) {
+      display: none;
+   }
+
+   #content>div.about2 {
+      padding: 40px 20px;
+   }
+
+   .geo_brands h3 {
+      margin-bottom: 24px;
+   }
+
+   .geo_brands .area1 li:first-of-type {
+      display: none;
+   }
+
+   .geo_brands .grid {
+      display: block;
+      margin-top: 32px;
+   }
+
+   .geo_brands .motion1 {
+      width: 60px;
+      height: 71px;
+      top: 44%;
+   }
+
+   .geo_brands .motion2 {
+      width: 71px;
+      height: 60px;
+   }
+
+   .tourism_video {
+      margin: 0
+   }
+   .tourism_video .grid{
+      margin-bottom: 0;
+   }
+   .tourism_video .grid .area1 {
+      display: block;
+      margin-top: 32px;
+   }
+
+   .tourism_video ul {
+      display: none;
+   }
+   .box1, .box2{
+      height: auto;
+   }
+   .box2, .lastnone{
+      display: none;
+   }
+   #content .gallery{
+      padding-bottom: 50px;
+   }
+   .gallery h3 {
+      margin-bottom: 24px;
+   }
+   .gallery ul {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+   }
+   .gallery .no1{
+      top: 16px;
+   }
+   .gallery ul li:nth-child(2) {
+      display: none;
+   }
+
+   .gallery .motion1 {
+      width: 86px;
+      height: 161px;
+   }
+}
+
+@media screen and (max-width:536px) {
+   .videoBox>div {
+      margin-top: -147.2px;
+   }
+}

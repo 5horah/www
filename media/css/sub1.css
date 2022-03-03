@@ -1,0 +1,119 @@
+/* 와이드 pc */
+
+/* 비주얼 영역 */
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+#imgBG{position:fixed; left:50%; top:50%; width:auto; min-width:100%; height:auto; min-height:100%; transform:translateX(-50%) translateY(-50%); z-index:-100; display:none}
+.videoBox>h2{text-align: center; position: relative; top: 50%; margin-top: -56.535px;
+   font-family: 'Raleway', sans-serif; font-weight: 700; font-style: italic; font-size: 5.333rem; position: relative;}
+.videoBox>h2::before{content: ''; display: block; width: 357px; height: 24px; background: url(../images/sub1/visual_icon.png)no-repeat center; background-size: cover; position: absolute; left: 50%; margin: 100px 0 0 -178.5px;}
+
+.down{display: block; font-weight: 300; font-size: 1.25rem; position: absolute; left:50%; margin-left: -51.21px; bottom: 0; animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% {opacity:1; color:#fff;}
+	100% {opacity:0.8; color:rgba(255, 255, 255, .8);}
+}
+.mousey{width: 3px; padding: 10px 15px; height: 35px; border: 1px solid #fff; border-radius: 25px;
+   position: relative; left: 50%; margin-left: -17.5px; bottom: 93px;}
+.scroller{width: 3px; height: 10px; border-radius: 25%; background-color: #fff; animation-name: mousescroll; animation-duration: 2.2s;  animation-iteration-count: infinite;}
+@keyframes mousescroll {
+  0% {opacity: 0;}
+  10% {transform: translateY(0); opacity: 1;}
+  100% {transform: translateY(15px); opacity: 0;}
+}
+
+/* 컨텐츠 공통영역 */
+#content{background:rgba(0, 0, 0, .8); width: auto;}
+#content>div{width: auto; padding-top: 120px; position: relative; overflow: hidden;}
+#content h3{font-family: 'Raleway', sans-serif; font-weight: 600; font-size: 2.222rem; color: #f18101;}
+.phrase{font-weight: 300; color: #f7f7f7; margin-top: 32px; line-height: 1.5em;}
+
+/* jeju_story */
+.jeju_story{text-align: center;}
+.jeju_story .phrase{margin: 32px 20%;}
+.jeju_story ul{display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 1.333rem; margin: 64px 64px 0;}
+.jeju_story ul li{overflow: hidden; border-radius: 4px;}
+.jeju_story ul li:first-child{align-self: flex-start;}
+.jeju_story ul li:last-child{align-self: flex-end;}
+.jeju_story ul li img{transition: all .5s; width: 100%; transform: scale(1)}
+.jeju_story ul li:hover img{transform: scale(1.2);}
+
+/* about2 */
+#content>div.about2{height: auto; background: url(../images/sub1/about2_img.png)no-repeat fixed center; background-size: cover; padding: 100px 64px; margin-top: 120px;
+   display: flex; gap: 4rem; align-items: center;}
+#content .about2 h3{color: #fff; width: 50%;}
+#content .about2 .phrase{width: 50%; margin-top: 0;}
+
+/* history */
+#content .history h3{text-align: center;}
+.history ul{display: grid; grid-template-rows: 1fr 1fr; gap: 1.5rem; margin: 64px 64px 120px 64px;}
+.history ul li{position: relative; overflow: hidden; z-index: 0; transition: all .5s; outline: 4px solid rgba(0, 0, 0, .0); border-radius: 4px;}
+.history ul li:hover{outline: 4px solid #f18101;}
+.history ul li::before{content: ''; display: block; width: 50%; height: 100%; background: rgba(0, 0, 0, .5); position: absolute; right: 0; z-index: -10;}
+.history ul li:first-child{grid-column: 1/spen 2; background-image: url(../images/sub1/history_img1.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.history ul li:nth-child(2){background-image: url(../images/sub1/history_img2.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.history ul li:nth-child(3){background-image: url(../images/sub1/history_img3.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.history ul li dl{width: 50%; float: right;}   
+.history ul li dt{font-family: 'Raleway', sans-serif; font-weight: 600; font-size: 1.333rem; margin: 56px 32px 32px 32px; position: relative; line-height: 1.5em;}
+.history ul li dt::before{content: ''; display: block; width: 20px; height: 2px; background: #f18101; border-radius: 4px; position: absolute; bottom: -16px;}
+.history ul li dd{margin: 0 32px 32px 32px; color: #f7f7f7; font-weight: 300;}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+   .mousey{padding: 8px 13px; height: 33px; margin-left: -15.5px;}
+
+   .history ul li::before{width: 100%;}
+   .history ul li dl{width: 100%; float: none;}
+
+}
+
+
+/* 태블릿 */
+@media screen and (max-width:1024px) {
+	.jeju_story ul{margin: 64px 40px 0; grid-template-columns: 1fr 2fr;}
+   .jeju_story ul li:last-child{display: none;}
+   
+   #content>div.about2{display: block; padding: 40px;}
+   #content .about2 h3{width: auto; margin: 0 10% 0 0;}
+   #content .about2 .phrase{width: auto; margin-top: 32px;}
+
+   .history ul{margin: 64px 40px 120px 40px;}
+}
+/* 소형 태블릿 */
+@media screen and (max-width:768px) {
+   #content .about2 h3{margin: 0 2% 0 0;}
+
+	
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   .videoBox>h2{font-size: 4.5rem;}
+   .videoBox>h2::before{width: 254px; height: 17px; margin: 80px 0 0 -127px;}
+   .down{bottom: -30px; margin-left: -45.525px;}
+
+   #content>div{padding-top: 50px;}
+   #content h3{text-align: center; float: none;}
+   .phrase{margin: 24px 10% 0;}
+
+   .jeju_story .phrase{margin: 24px 10% 0;}
+   .jeju_story ul{margin: 32px 20px 0; grid-template-columns: 1fr;}
+   .jeju_story ul li:first-child{display: none;}
+
+   #content>div.about2{display: block; padding: 40px 20px; margin-top: 50px;}
+   #content .about2 h3{margin: 0 2%;}
+   #content .about2 .phrase{text-align:center; margin: 24px 0 0;}
+
+   .history ul{margin: 32px 20px 50px 20px; grid-template-rows: repeat(1, 1fr)}
+   .history ul li:first-child{grid-column: 1/spen 1;}
+   .history ul li dl{text-align: center;}
+   .history ul li dt{margin-top: 32px;}
+   .history ul li dt::before{left: 50%; margin-left: -10px;}
+   .history ul li dd{margin: 0 24px 32px 24px;}
+
+
+   
+}
+
+
+
