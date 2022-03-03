@@ -1,0 +1,35 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 기업소개>기업정보 내용*/
+
+/*공통영역*/
+#content .content_topic{text-align: center; font-family: 'Noto Sans KR', sans-serif; margin-bottom: 80px;}
+#content .content_topic h3{font-weight: 700; font-size: 2.25em; margin-bottom: 16px; color: #333;}
+#content .content_topic p{font-weight: 400; font-size: 1.25em; color: #666; line-height: 1.5em;}
+#content .content_topic p span{color: #1979bd;}
+
+/*content_area01 영역*/
+#content .content_area01{width: 1200px; margin: 0 auto;}
+#content .content_area01 .content_topic{margin-top: 40px;}
+#content .content_area01 ul{width: 1600px; height: 397px; overflow: hidden; position: relative; left: 50%; top: 0; margin-left: -1000px; padding-left: 400px;}
+#content .content_area01 li{float: left; margin-right: 32px; width: 276px; background: #fff; border-top: 1px solid #1979bd; box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 5%); text-align: center; }
+#content .content_area01 li:last-of-type{margin-right: 0;}
+#content .content_area01 li img{margin: 59px 0 16px;}
+#content .content_area01 li dt{font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 1.125em; color: #1979bd; margin-bottom: 16px;}
+#content .content_area01 li dd{line-height: 1.5em; color: #666; margin-bottom: 56px;}
+
+/*content_area02 영역*/
+#content .content_area02{width: 1200px; margin: 0 auto; padding-top: 120px; position: relative;}
+#content .content_area02::after{content: ''; display: block; width: 2000px; height: 648px; background: #f8f8f8; position: absolute; top: 0; left: 0; z-index: -1; margin-left: -400px;}
+#content .content_area02 ul{width: 1600px; height: 687px; overflow: hidden; position: relative; left: 50%; top: 0; margin-left: -1000px; padding-left: 400px;}
+#content .content_area02 li{float: left; width: 300px; height: 511px; overflow: hidden; position: relative; box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 20%);}
+#content .content_area02 li:nth-of-type(even){position: relative; top: 56px;}
+#content .content_area02 dl{width: 236px; height: 511px; background: rgba(0, 0, 0, .5); color: #fff; padding: 0 32px; position: absolute; left: 0; top: 389px; transition: all .5s;}
+#content .content_area02 li:hover dl{top: 0;}
+#content .content_area02 dt{font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 1.250em; position: relative; top: -12px; transition: all .5s;}
+#content .content_area02 li:hover dt{margin-top: 264px;}
+#content .content_area02 dd:first-of-type{font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 1.125em; line-height: 1.687em; margin-bottom: 30px; position: relative; top: -4px;}
+#content .content_area02 dd:last-of-type{line-height: 1.5em; text-align: justify; position: relative; opacity: 0; transition: all .5s;}
+#content .content_area02 li:hover dd:last-of-type{opacity: 1;}
+#content .content_area02 dd:last-of-type::after{content: ''; display: block; width: 16px; height: 2px; background: #1979bd; position: absolute; top: -16px; left: 0;}
+
+
+

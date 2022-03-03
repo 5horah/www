@@ -1,0 +1,262 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터-AS서비스안내</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content3.css">
+
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="visual">
+        <img src="./common/images/visual.jpg" alt="서브 비주얼 이미지">
+        <div class="visual_text">
+            <h3>CUSTOMER SERVICE</h3>
+            <p>세스코에 대한 모든 궁금증을 해결해드립니다.</p>
+        </div>
+    </div>
+
+    <div class="sub_menu">
+        <ul>
+            <li><a href="./sub6_1.html">고객상담신청</a></li>
+            <li><a href="./sub6_2.html">자주묻는질문</a></li>
+            <li class="current"><a href="./sub6_3.html">AS서비스안내</a></li>
+        </ul>
+    </div>
+
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map"><i class="fas fa-home"></i><span class="hidden">home</span> &gt; 고객센터 &gt; <strong>AS서비스안내</strong></div>
+            <h2>AS서비스안내</h2>
+            <p>서비스 요금은 정부에서 제정한 <span>소비자 기본법</span>을 기준으로 요금을 청구하고 있습니다.</p>
+        </div>
+        <div class="content_area01">
+            <div class="content_topic">
+                <h3>제품서비스 안내</h3>
+            </div>
+            <div class="content_tab">
+                <ul>
+                    <li><a class="tab tab1" href="#">분쟁해결 기준</a></li>
+                    <li><a class="tab tab2" href="#">보증기간 산정 기준</a></li>
+                    <li><a class="tab tab3" href="#">유무상처리 기준</a></li>
+                </ul>
+            </div>
+            <div class="contlist">
+                <h4>분쟁해결 기준</h4>
+                <h5 class="subtopic">소비자 분쟁해결 기준</h5>
+                <dl>
+                    <dt>제 1조 (목적)</dt>
+                    <dd>소비자기본법 제16조 제2항과 같은 법 시행령 제8조 제3항의 규정에 의해 일반적 소비자 분쟁해결 기준에 따라 품목별 소비자 분쟁해결 기준을 정함으로 소비자와 사업자간에 발생한 분쟁이 원활하게 해결될 수 있도록 구체적인 합의 또는 권고의 기준을 제시하는데 그 목적이 있다.</dd>
+                </dl>
+                <dl>
+                    <dt>제2조(피해구제청구)</dt>
+                    <dd>분쟁당사자간에 합의가 이루어지지 않을 경우 분쟁당사자는 중앙행정기관의 장, 시·도지사, 한국소비자원장 또는 소비자단체에게 그 피해구제를 청구할 수 있다.</dd>
+                </dl>
+                <dl>
+                    <dt>제3조(품목 및 보상기준)</dt>
+                    <dd>이 고시에서 정하는 소비자피해기준, 품질보증기간 및 부품보유기간은 각각 아래 표와 같다.</dd>
+                </dl>
+                <dl>
+                    <dt>제4조(재검토 기한)</dt>
+                    <dd>공정거래위원회는 「훈령·예규 등의 발령 및 관리에 관한 규정 (대통령 훈령 제334호)」에 따라  이 고시에 대하여<br>2016년 1월 1일을 기준으로 매 3년이 되는 시점 (매 3년째의 12월 31일까지를 말한다)마다  그 타당성을 검토하여 개선 등의 조치를 하여야 한다.</dd>
+                </dl>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="2" rowspan="2" class="table_rightborder">소비자 피해 유형</th>
+                            <th scope="col" colspan="2">보상 내역(렌탈/판매)</th>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="table_rightborder">렌탈 계약기간 또는 보증기간 이내</th>
+                            <th scope="col">렌탈 계약기간 종료 또는 보증기간 이후</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="10">정상적인사용 상태에서 자연 발생한 성능, 기능상의 하자로 고장이 난경우</th>
+                            <td>구입 후 14일 이내 발생한 성능/기능상의 고장 대하여 교환 및 환불 요청 시</td>
+                            <td>제품교환 또는 렌탈 등록비(선납 렌탈료 포함) 환불 또는 구입가 환불</td>
+                            <td>해당 없음</td>
+                        </tr>
+                        <tr>
+                            <td>구입 후 고장이 발생하여 수리를 요하는 경우</td>
+                            <td>무상수리</td>
+                            <td>유상수리 (단, AS 후 1년 이내 동일불량인 경우 무상수리)</td>
+                        </tr>
+                        <tr>
+                            <td>교환된 제품이 고장이 발생하여 수리를 요하는 경우</td>
+                            <td>무상수리</td>
+                            <td>유상수리 (단, AS 후 1년 이내인 경우 무상수리)</td>
+                        </tr>
+                        <tr>
+                            <td>제품 보증기간 내 부품 단종 등으로 인한 수리 불가능 시</td>
+                            <td>제품교환 (당사 보상기준에 따름) 또는 동급 제품으로  교환</td>
+                            <td>해당 없음</td>
+                        </tr>
+                        <tr>
+                            <td>동일하자로 3회 고장이 난 경우</td>
+                            <td>제품 교환 (1년 이내 3회 발생 시)</td>
+                            <td>유상수리 (단, AS 후 1년 이내 동일불량인 경우 무상수리)</td>
+                        </tr>
+                        <tr>
+                            <td>서로 다른 하자로 총5회 고장이 난 경우</td>
+                            <td>제품 교환 (1년 이내 5회 발생 시)</td>
+                            <td>유상수리 (단, AS 후 1년 이내 동일불량인 경우 무상수리)</td>
+                        </tr>
+                        <tr>
+                            <td>부품 보유기간 내 수리가 불가능한 경우</td>
+                            <td>제품 교환 (당사 보상기준에 따름)</td>
+                            <td>정액 감가상각한 금액과 유사가치 제품교환 또는 정액 감가 상각한 금액에 10%를 가산하여 환급</td>
+                        </tr>
+                        <tr>
+                            <td>부품 보유기간을 초과하여 수리가 불가능한 경우</td>
+                            <td>렌탈계약 종료 (단, 고객이 사용 연장을 원할 경우 회사가 정한 보상정책 중 택일하여 사용 가능)<br>판매: 해당 없음</td>
+                            <td>정액 감가상각한 금액과 유사가치 제품교환 또는 정액 감가상각한 금액 환급</td>
+                        </tr>
+                        <tr>
+                            <td>소비자가 수리 의뢰한 제품을 분실한 경우</td>
+                            <td>렌탈: 등급 제품 교환 또는 렌탈등록비(선납렌탈료 포함) 환불<br>판매: 동급 제품 교환 또는 정액 감가상각한 금액에 10% 가산하여 환급</td>
+                            <td>동금 제품교환 또는 정액 감가 상각한 금액에 10%를 가산하여 환급</td>
+                        </tr>
+                        <tr>
+                            <td>제품구입 시 운송과정 및 제품 설치 중 발생한 피해</td>
+                            <td>무상수리 후 미해결 시 제품 교환</td>
+                            <td>해당 없음</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3">소비자의 고의, 과실에 의한 성능, 기능상의 고장</th>
+                            <td>수리가 가능한 경우</td>
+                            <td>유상수리</td>
+                            <td>유상수리</td>
+                        </tr>
+                        <tr>
+                            <td>부품 보유기간 내 수리가 불가능한 경우</td>
+                            <td>유상수리에 해당하는 금액 징수 후 대체품으로 교환</td>
+                            <td>유상수리에 해당하는 금액 징수 후 정액 감가상각을 적용하여 제품 교환</td>
+                        </tr>
+                        <tr>
+                            <td>부품 보유기간을 경과하여 수리가 불가능한 경우</td>
+                            <td>렌탈계약 종료 (단, 고객이 사용연장을 원할 경우 회사가 정한 보상정책 중 택일하여 사용 가능)<br>판매: 해당 없음</td>
+                            <td>보상불가</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="4">기타</th>
+                            <td>천재지변(낙뢰, 지진, 풍수해 등)에 의해 고장이 발생하였을 경우</td>
+                            <td>렌탈: 무상수리<br>판매: 유상수리</td>
+                            <td>유상수리</td>
+                        </tr>
+                        <tr>
+                            <td>성능, 기능상 하자가 없는 상태에서 서비스를 요청하는 경우</td>
+                            <td>유상수리</td>
+                            <td>유상수리</td>
+                        </tr>
+                        <tr>
+                            <td>사용상 정상 마모/소모되는 부품을 교환하는 경우(배터리,필터류 등)</td>
+                            <td>렌탈: 정기서비스는 무상, 추가 서비스는 유상<br>판매: 유상</td>
+                            <td>유상수리</td>
+                        </tr>
+                        <tr>
+                            <td>소모품(필터류) 보증기간</td>
+                            <td>1개월(단, 최초 1회에 한함), 이후 유상처리</td>
+                            <td>유상처리</td>
+                        </tr>
+                    </tbody>
+                </table>    
+                <p class="lastp">* 감가상각비 계산은 “ (사용연수/내용연수) * 구입가 “ 입니다.</p>
+                <p class="lastp">* 고객의 요청 혹은 성능상 하자가 없는 경우에 의한 A/S는 고장수리 횟수 산정에 추가하지 않습니다.</p>    
+                <p class="lastp">* 본 제품의 렌탈계약 고객은 계약서에 명시된 총 렌탈기간이 도래하면 소유권 이전을 선택할 수 있습니다.</p>
+            </div>
+            <div class="contlist">
+                <h4>보증기간 산정 기준</h4>
+                <h5 class="subtopic">제품의 보증기간</h5>
+                <ol>
+                    <li>세스코는 품목별 소비자 피해 보상규정에 의거 아래와 같이 제품에 대한 보증을 실시합니다.</li>
+                    <li>제품 보증기간이라 함은 제조사 또는 제품 판매자가 소비자에게 정상적인 상태에서 자연 발생한 품질,  성능,  기능 하자에 대하여 무료수리를 해주겠다고 약속한 기간을 말합니다.</li>
+                    <li>제품의 보증기간은 구입일자를 기준으로 산정하며, 구입일자의 확인은 제품보증서 (구입영수증포함)에 의해서 적용합니다. 단, 보증서가 없는 경우는 제조일로부터 3개월 감안 (유통기간반영)하여 구입일자를 적용하여 보증기간을 산정합니다.</li>
+                    <li>교환 받은 제품의 품질보증기간은 “교환일＂로 부터 보증기간을 산정합니다.</li>
+                    <li>
+                        세다음의 경우는 보증기간이 정상적인 경우의 절반(1/2)으로 단축 적용한 것입니다.
+                        <ol>
+                            <li>영업용도나 영업장에서 사용할 경우. (단, 영업용 제품은 제외)</li>
+                            <li>차량, 선박 등에 탑재하는 등 정상적인 사용환경이 아닌 곳에서 사용할 경우</li>
+                            <li>제품사용 빈도가 극히 많은 공공장소에 설치 사용할 경우</li>
+                            <li>기타 생산활동 등 가정용 이외의 용도로 사용될 경우</li>
+                        </ol>
+                    </li>
+                </ol>
+                <h5 class="subtopic">제품별 보증기간</h5>
+                <ol>
+                    <li>일시불구입제품: 1년</li>
+                    <li>렌탈제품: 렌탈 계약기간은 보증기간과 동일한 서비스를 제공</li>
+                </ol>
+                <h5 class="subtopic">부품 보유기간</h5>
+                <ol>
+                    <li>수리 보상 의무기간은 부품 보유기간 이내로 한정되며, 수리보상 의무기간을 경과한 제품은 당사가 수리의무를 지지 않습니다.</li>
+                    <li>제품 부품 보유기간은 소비자분쟁해결기준에 의거해 5년으로 정합니다.</li>
+                </ol>
+            </div>
+            <div class="contlist">
+                <h4>유무상 처리 기준</h4>
+                <h5 class="subtopic">무상 서비스</h5>
+                <p>보증기간 이내에 정상적으로 사용한 상태에서 발생된 성능, 기능상의 고장에 적용됩니다.</p>
+                <h5 class="subtopic">유상 서비스</h5>
+                <ol>
+                    <li>보증기간이 경과된 제품의 서비스</li>
+                    <li>구입 제품의 초기 설치 이후, 추가로 제품을 연결하거나 재연결을 하는 경우</li>
+                    <li>설치/철거: 이사나 제품 이동으로 재설치 및 외부기기 연결 요청의 건</li>
+                    <li>소모성 부품 수명이 다한 경우 (필터류, 램프류, 배터리), 단 랜탈고객의 정기서비스는 무상</li>
+                    <li>천재지변(화재, 염해, 가스피해, 지진, 풍수해, 낙뢰, 이상 전원 등) 및 동파사고에 의해 고장이 났을 경우</li>
+                    <li>제품고장이 아닌 고객 요청에 의한 제품 점검 (보증기간 이내라도 유상 수리)</li>
+                    <li>고객부주의
+                        <ol>
+                            <li>소비자의 과실로(이동, 낙하, 충격, 파손, 무리한 동작) 고장이 났을 경우</li>
+                            <li>사용설명서 내의 주의사항을 지키지 않아 고장 발생시</li>
+                            <li>당사 서비스센터 외 임의 수리, 개조로 인한 고장 발생시</li>
+                            <li>제품 내부의 이물질 투입으로 인한 서비스 요청하는 건</li>
+                            <li>차단기/콘센트/멀티탭 불량, 전원 오인가, 전원 코드 미삽입 등 사전 확인 없이 서비스 요청하는 건</li>
+                            <li>공유기, 사용전원의 이상 등 외부 환경 문제로 인한 서비스 요청하는 건</li>
+                        </ol>
+                    </li>
+                </ol>
+                <h5 class="subtopic">유상 서비스 비용 산정기준</h5>
+                <ul>
+                    <li><img src="./images/content3/pay_icon1.png" alt="부품비 아이콘"><span>부품비</span></li>
+                    <li><img src="./images/content3/pay_icon2.png" alt="수리비 아이콘"><span>수리비(기술료)</span></li>
+                    <li><img src="./images/content3/pay_icon3.png" alt="출장비 아이콘"><span>출장비</span></li>
+                </ul>
+                <ol>
+                    <li>서비스 비용은 정부에서 재정한 소비자 기본법을 기준으로 금액이 청구됩니다.</li>
+                    <li>서비스 비용은 부품비, 수리공임비, 출장비의 합계액으로 구성됩니다.
+                        <ol>
+                            <li>부품비: 제품 수리 중 부품을 교체할 경우 발생하는 부품가격</li>
+                            <li>수리공임: 제품을 수리하는데 따른 수리의 난이도와 시간을 고려한 기술료, 동일 제품 내에 2개소 이상 수리 시는 그 중 고가인 수리비 1건만 적용합니다.</li>
+                            <li>출장비: 엔지니어가 출장하여 수리할 경우, 거리와 관계없이 적용되며 동일건물/주소에 동일고객이 여러 건 접수시 1건만 적용합니다.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/sub6.js"></script>
+</body>
+</html>

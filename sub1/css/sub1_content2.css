@@ -1,0 +1,35 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 기업소개>인사말 내용*/
+
+/* 공통영역 */
+#content h4{font-family: 'Roboto', sans-serif; font-weight: 500; margin: 40px 0 14px; font-size: 1.25em; color: #1979bd;}
+#content dt{font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 1.875em; color: #333; line-height: 1.5em; margin-bottom: 40px;}
+#content dd{font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.125em; color: #666; line-height: 1.5em;text-align: justify; margin-bottom: 80px;}
+#content dd .f_text{margin-bottom: 32px;}
+#content dd span{color: #1979bd;}
+#content dd:last-of-type{font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.25em; line-height: 68px; color: #333; position: relative; left: 80px; top: 46px;}
+#content dd:last-of-type::after{content: ''; display: block; width: 160px; height: 160px; border:4px solid rgba(25, 121, 189, 50%); position: absolute; top: -46px; left: -80px; z-index: -2;}
+#content dd:last-of-type::before{content: ''; display: block; width: 160px; height: 70px; background: #fff;position: absolute; top:0; left: 0; z-index: -1;}
+
+/*content_topic*/
+#content .content_topic{text-align: center; font-family: 'Noto Sans KR', sans-serif; margin-bottom: 100px; margin-top: 40px;}
+#content .content_topic h3{font-weight: 700; font-size: 2.25em; margin-bottom: 16px; color: #333;}
+#content .content_topic p{font-weight: 400; font-size: 1.25em; color: #666; line-height: 1.5em;}
+#content .content_topic p span{color: #1979bd;}
+
+/*.area_01 영역 */
+#content .area1{padding-bottom: 202px; margin-top: 48px; overflow: hidden;}
+#content .area1 .area1_text{float: left; width: 600px; position: relative;}
+#content .area1 dl::after{content: ''; display: block; width: 465px; height: 370px; background: #f8f8f8; position: absolute; top: 373px; left: 655px; z-index: -1;}
+#content .area1 dl dd:last-of-type{background: url(../images/content2/content01_sign.jpg) 214px 15px no-repeat;}
+#content .area1 img{float: right; position: relative;}
+
+/*.area_02 영역 */
+#content .area2{padding-bottom: 202px; overflow: hidden;}
+#content .area2 .area2_text{float: right; width: 600px; position: relative;}
+#content .area2 dl::after{content: ''; display: block; width: 465px; height: 370px; background: #f8f8f8; position: absolute; top: 373px; right: 655px; z-index: -1;}
+#content .area2 dl dd:last-of-type{background: url(../images/content2/content02_sign.jpg) 290px 15px no-repeat;}
+#content .area2 img{float: left; position: relative;}
+
+
+
+

@@ -1,0 +1,49 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 고객센터-AS서비스안내*/
+
+/*.content_topic 공통영역*/
+#content .content_topic{font-family: 'Noto Sans KR', sans-serif;}
+#content .content_topic h3{font-weight: 700; font-size: 2.25em; color: #333; margin-bottom: 16px;}
+#content .content_topic p{font-size: 1.25em; color: #666; line-height: 1.5em;}
+#content .area_box{width: 1200px; margin: 0 auto; padding: 120px 0;}
+
+/* tab */
+#content .content_tab{text-align: center; font-family: 'Noto Sans KR', sans-serif; width: 2000px; position: relative; left: 50%; top: 0; margin: 40px 0 120px -1000px}
+#content .content_tab p{font-weight: 700; font-size: 2.25em; margin-bottom: 56px; color: #333;}
+#content .content_tab::before{content: ''; display: block; width: 100%; height: 1px; background: #ececec; position: absolute; bottom: 0; left: 0;}
+#content .content_tab ul{overflow: hidden; width: 600px; margin: 0 auto;}
+#content .content_tab li{float: left; width: 33.33%;}
+#content .content_tab li:hover .tab{opacity: 1;}
+#content .content_tab li .tab{display: block; margin-bottom: 24px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.25em; color: #666; opacity: .6; transition: all .5s;}
+#content .content_tab li{opacity: 1; position: relative;}
+.afline::before{content: ''; display: block; width: 100%; height: 2px; background: #1979bd; position: absolute; left: 0; bottom: 1px;}
+#content .contlist{display: none;}
+
+/*content*/
+#content .content_area01 .content_topic{margin: 40px 0 80px; text-align: center;}
+
+/*contlist*/
+#content .content_area01 .contlist{margin-bottom: 120px; font-family: 'Noto Sans KR', sans-serif; }
+#content .content_area01 .contlist h4{font-weight: 700; font-size: 2em; color: #333; margin-bottom: 80px; color: #333; text-align: center;}
+#content .content_area01 .contlist .subtopic{font-weight: 700; font-size: 1.5em; margin-bottom: 32px; color: #1979bd;}
+#content .content_area01 .contlist>dl{margin-bottom: 24px;}
+#content .content_area01 .contlist>dl dt{font-size: 1.25em; font-weight: 500; margin: 0 0 8px 16px; position: relative; color: #333;}
+#content .content_area01 .contlist>dl dt::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 100%; position: absolute; left: -16px; top: 12px; background: #999;}
+#content .content_area01 .contlist>dl dd{font-size: 1.125em; line-height: 1.5em; color: #666; margin-left: 16px;}
+#content .content_area01 .contlist table{margin: 32px 0 8px 0; font-size: 1.125em;}
+#content .content_area01 .contlist table tr{border-bottom: 1px solid #ececec; margin: 0 auto;}
+#content .content_area01 .contlist table thead th{padding: 16px 0; line-height: 1.5em;  color: #fff; background: rgba(25,121,187,.8); font-weight: 500; text-align: center;}
+#content .content_area01 .contlist table thead .table_rightborder{border-right: 1px solid #ececec;}
+#content .content_area01 .contlist table tbody tr th{font-weight: 400; line-height: 1.5em;  padding: 16px; border-right: 1px solid #ececec; width: 17%;}
+#content .content_area01 .contlist table tbody tr td{font-weight: 300; line-height: 1.5em;  padding: 16px; border-right: 1px solid #ececec;}
+#content .content_area01 .contlist table tbody tr td:last-of-type{border-right: none;}
+#content .content_area01 .contlist p.lastp{color: #666;}
+#content .content_area01 .contlist>ol{margin-bottom: 80px; list-style:decimal; text-align: justify;}
+#content .content_area01 .contlist>ol>li{font-size: 1.125em; line-height: 1.5em; color: #666; margin: 0 0 24px 20px; position: relative; line-height: 1.5em;}
+#content .content_area01 .contlist>ol>li ol{margin: 8px 0 0 16px; list-style: none;}
+#content .content_area01 .contlist>ol>li ol li{position: relative; margin-top: 8px;}
+#content .content_area01 .contlist>ol>li ol li::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 100%; position: absolute; left: -16px; top: 12px; background: #999;}
+#content .content_area01 .contlist:last-of-type p{font-size: 1.125em; line-height: 1.5em; color: #666; margin: 0 0 24px 0; position: relative; line-height: 1.5em; margin-bottom: 80px;}
+#content .content_area01 .contlist>ul{overflow: hidden;  width: 1200px; padding: 24px 0; border: 1px solid #f8f8f8; margin-bottom: 32px;}
+#content .content_area01 .contlist>ul li{float: left; width: 33.33%; background: url(../images/content3/pluse_icon.png) 100% 50% no-repeat; text-align: center;}
+#content .content_area01 .contlist>ul li:last-of-type{background: none;}
+#content .content_area01 .contlist>ul li span{display: block; margin-top: 8px; font-weight: 500; font-size: 1.125em; color: #666;}

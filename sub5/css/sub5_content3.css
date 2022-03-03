@@ -1,0 +1,45 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 인재채용-채용가이드 내용*/
+
+/*.content_topic 공통영역*/
+#content .content_topic{font-family: 'Noto Sans KR', sans-serif;}
+#content .content_topic h3{font-weight: 700; font-size: 2.25em; color: #333; margin-bottom: 16px;}
+#content .content_topic p{font-size: 1.25em; color: #666; line-height: 1.5em;}
+#content .area_box{width: 1200px; margin: 0 auto; padding: 120px 0;}
+
+/*content*/
+#content .content_area01{margin-bottom: 120px;}
+#content .content_area01 .content_topic{margin-top: 40px; text-align: center; margin-bottom: 80px;}
+#content .content_area01 .process{width: 1200px; height: 359px; background: url(../images/content3/process_bk.png); overflow: hidden; margin-bottom: 80px;}
+#content .content_area01 .process li{float: left; width: 115px; height: 115px; text-align: center; font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 1.5em; margin: 50px 192px 0 0;}
+#content .content_area01 .process li:first-of-type{margin-left: 82px; color: #A7D2EE;}
+#content .content_area01 .process li:nth-of-type(2){color: #7CBBE5;}
+#content .content_area01 .process li:nth-of-type(3){color: #50A5DD;}
+#content .content_area01 .process li:last-of-type{margin-right: 0; color: #248ED4;}
+#content .content_area01 .process li span{display: block; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 0.833em; color: #333;  margin-top: 4px;}
+#content .content_area01>h4{font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 1.5em; margin-bottom: 32px; color: #1979bd; margin-bottom: 32px;}
+#content .content_area01 .point{overflow: hidden;}
+#content .content_area01 dl{font-family: 'Noto Sans KR', sans-serif; float: left; width: 319px; height: 152px; margin-right: 21px; border: 1px solid #ececec; border-radius: 16px; padding: 40px 32px;}
+#content .content_area01 dl:last-of-type{margin-right: 0;}
+#content .content_area01 dl dt{font-size: 1.25em; font-weight: 500; margin-bottom: 16px; color: #333;}
+#content .content_area01 dl dt span{display: block; color: #1979bd; font-size: 0.9em;}
+#content .content_area01 dl dd{font-size: 1.125em; line-height: 1.5em; color: #666; margin-left: 16px; position: relative;}
+#content .content_area01 dl dd::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 100%; position: absolute; left: -16px; top: 12px; background: #999;}
+
+#content .content_area02{width: 2000px; position: relative; left: 50%; margin-left: -1000px; background: #f8f8f8;}
+#content .content_area02 .content_topic{margin-bottom: 80px;}
+#content .content_area02 li{overflow: hidden; font-family: 'Noto Sans KR', sans-serif; margin-bottom: 24px; background: url(../images/content3/cherons.png) 224px 48px no-repeat;}
+#content .content_area02 li h4{float: left; width: 200px; padding: 32px 0; text-align: center; font-weight: 500; font-size: 1.25em; color: #fff; background: rgba(25, 121, 187, .8); border-radius: 16px; margin-top: 16px;}
+#content .content_area02 li p{font-size: 1.125em; color: #666; line-height: 2em; margin-left: 272px; padding: 32px 24px; border: 1px solid #ececec; border-radius: 16px; background: rgba(255, 255, 255, .5);}
+
+#content .content_area03{margin-bottom: 120px;}
+#content .content_area03 .content_topic{margin: 120px 0 80px; text-align: center;}
+#content .content_area03>a{float: right; font-family: 'Noto Sans KR', sans-serif; color: #1979bd; padding: 16px; margin-bottom: 16px; font-weight: 500; font-size: 1.125em; opacity: .8; transition: all .5s;}
+#content .content_area03>a i{margin-left: 8px;}
+#content .content_area03>a:hover{opacity: 1;}
+#content .content_area03 li{padding: 24px; background: #f8f8f8; border-radius: 16px; margin-bottom: 16px; font-family: 'Noto Sans KR', sans-serif; clear: both;}
+#content .content_area03 li .q .trigger{display:block; padding:10px 15px; font-weight: 500; font-size: 1.25em; color: #333; position: relative; overflow: hidden;}  
+#content .content_area03 li .q .trigger span{float: left; font-family: 'Roboto', sans-serif; font-weight: 700; margin-right: 16px; color: rgba(25, 121, 187, .8);}
+#content .content_area03 li .q .trigger i{color: #999; float: right; margin-top: 4px;}
+#content .content_area03 li .a{font-size: 1.125em; color: #666; position: relative; padding: 16px 15px 16px 64px;; line-height:1.5em; text-align: justify; overflow:hidden; display: none;}
+#content .content_area03 li .a::before{content: ''; display: inline-block; width: 2px; height: 50%; background: rgba(25, 121, 187, .6); position: absolute; left: 48px; top: 30%;}
+

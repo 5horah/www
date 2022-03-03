@@ -1,0 +1,63 @@
+#showsurvey{z-index:120; position:fixed; left: 50%; top: 260px; text-align: center; width:auto; margin-left: -250px;}
+#showsurvey .survey_content{background: #fff; border: 6px solid #1979bd; padding: 32px; border-radius: 16px; }
+#showsurvey h2{font-size: 24px; font-weight: 700; margin-bottom: 16px; position: relative; color: #1979bd;}
+#showsurvey h2::before{content: ''; display: block; width: 164px; height: 4px; border-radius: 2px; position: absolute; left: 50%; bottom: -4px; margin-left: -84px; background: rgba(216, 39, 35, 0.6);}
+#showsurvey .ex{font-size: 16px; color: #999; margin-bottom: 24px;}
+#showsurvey form>p{font-size: 18px; font-weight: 500; margin-bottom: 16px;}
+#showsurvey form>p>span{display: block; font-weight: 500; margin-top: 8px;}
+#showsurvey form>p>span strong{color: #1979bd;}
+#showsurvey form .row{text-align: left; font-size: 18px; margin: 8px 10px;}
+#showsurvey .btn_wrap{margin-top: 32px;}
+.modal_box{position: fixed; left: 0; top: 0; z-index: 110; width: 100%; height: 100%; background: #000; opacity: .7;}
+.close_btn{position: absolute; top: 16px; right: -40px; display: block; overflow: hidden; color: #fff; font-size: 2em;}
+.survey_content .check{text-align: left; display: inline-block; margin: 10px 8px;}
+.progress_wrap{overflow: hidden; width: fit-content; margin: 32px auto 0;}
+.progress{float: left; margin-right: 32px; width: 70px;}
+.progress:last-child{margin-right: 0;}
+.progress p{font-weight: 500; font-size: 16px; text-align: left; margin-top: 4px; text-align: center;}
+.progress p>span{color: #1979bd; display: block;}
+.progress>div{height: 100px; background: #f8f8f8;}
+.progress>div>div{display: block; position: relative;}
+.progress>div>div span{position: absolute; display: block; width: 100%; top: -30px; left: 50%; margin-left: -50%; color: #1979bd; text-align: center;}
+.progress>div .re1{background: #1979bd;}
+.progress>div .re2{background: #f8f8f8;}
+.be .btn_wrap .btn{padding: 15px 74.5px 16px;}
+/* 체크박스 ui변경 */
+input[type=radio] + label::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 50%;
+    content: '';
+    background: url(../images/checked_1.png) center center no-repeat;
+    margin: 0px 10px -6px 0px;
+    transition: all .3s;
+}
+input[type=radio] {
+    display: none;
+}
+input[type=radio] + label {
+    cursor: pointer;
+}
+input[type=radio]:checked + label:before {
+    background: url(../images/checked_2.png) center center no-repeat;
+}
+
+/* 버튼 커스텀(btn_wrap, btn_double) */
+.btn_wrap{overflow: hidden; text-align: center; }
+.btn_wrap .btn{display: block; width: -webkit-fill-available; padding: 15px 64px 16px; border-radius: 4px; border: 1px solid #1979bd; box-sizing: border-box; cursor:pointer;
+    font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 1em; text-align: center; overflow: hidden; position: relative;}
+.btn_wrap .btn::before{content: ''; display: block; width: 100%; height: 100%; border-radius: 100%; background:rgba(255,255,255,.15); position: absolute; left: 0; bottom: 0; transition: all .2s; transform: translate(0px, 160%) scale(1.2, 2);}
+.btn_wrap div:hover .btn::before, .btn_wrap li:hover .btn::before{transform: translate(0,0%) scale(1.2,2);}
+.btn_wrap .btn.btn_nomal{background: #fff; color: #1979bd;}
+.btn_wrap .btn.btn_solid{background: #1979bd; color: #fff;}
+.btn_double>div, .btn_double>li{float: left;}
+.btn_double>div:first-child .btn, .btn_double>li:first-child .btn{margin-right: 4px;}
+.right_btn{margin: 0 0 0 auto; width: fit-content;}
+.center_btn{margin: 0 auto; width: fit-content;} 
+
+
+
+
+

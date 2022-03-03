@@ -1,0 +1,47 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 기업소개>오시는길 내용*/
+
+/*공통영역*/
+#content .content_topic{text-align: center; font-family: 'Noto Sans KR', sans-serif; margin-bottom: 80px;}
+#content .content_topic h3{font-weight: 700; font-size: 2.25em; margin-bottom: 16px; color: #333;}
+#content .content_topic p{font-weight: 400; font-size: 1.25em; color: #666; line-height: 1.5em;}
+#content .content_topic p span{color: #1979bd;}
+#content ul li:first-of-type dl dt::before{content: ''; display: inline-block; color: #fff; font-size: 0.889em; text-align: center; font-weight: 300; border-radius: 4px; padding: 6px 14px; margin-right: 16px;}
+
+#content #map{background: #333;}
+
+/*content_area01 영역*/
+#content .content_area01{width: 1200px; margin: 0 auto;}
+#content .content_area01 .content_topic{margin-top: 40px;}
+
+/* .content_map 영역 */
+#content .content_map{overflow: hidden; border: 1px solid #ececec; margin-bottom: 24px;}
+#content .content_map .info{float: left; width: 320px; border-right: 1px solid #ececec;}
+#content .content_map .info .info_address{padding: 32px 24px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; color: #666; line-height: 1.5em;}
+#content .content_map .info .info_address address{margin-bottom: 24px;}
+#content .content_map .info .info_address span{font-weight: 700;}
+#content .content_map #map{float: right;}
+
+/* ul영역(대중교통 안내) */
+#content ul{font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; color: #333; margin-bottom: 64px;}
+#content ul li{padding: 56px 60px;}
+#content ul li:last-of-type{border-top: 2px solid#f8f8f8;}
+#content ul li h4{font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 1.25em; margin-bottom: 32px;}
+#content ul li dl{overflow: hidden; font-family: 'Noto Sans KR', sans-serif; font-size: 1.125em; font-weight: 400; color: #666; margin-bottom: 8px;}
+#content ul li dl dt{float: left; margin-right: 48px;}
+#content ul li:first-of-type dl:nth-of-type(1) dt::before{content: '지선'; background: #009c3d;}
+#content ul li:first-of-type dl:nth-of-type(2) dt::before{content: '간선'; background: #2958a7;}
+#content ul li:first-of-type dl:nth-of-type(3) dt::before{content: '직행'; background: #e32126;}
+#content ul li:first-of-type dl:nth-of-type(4) dt::before{content: '시외'; background: #e32126;}
+#content ul li:first-of-type dl:nth-of-type(5) dt::before{content: '일반'; background: #2958a7;}
+#content ul li:first-of-type dl:nth-of-type(6) dt::before{content: '마을'; background: #009c3d;}
+#content ul li dl dd{position: relative; top: 4px;}
+#content ul li dl dd::before{content: ''; display: block; width: 2px; height: 16px; background: #cecece; position: absolute; left: 163px; top: 6px;}
+#content ul li:last-of-type dl dd::before{left: 126px;}
+#content ul li:last-of-type dl dt::before{content: '5'; display: inline-block; color: #fff; font-size: 0.889em; text-align: center; font-weight: 400; border-radius: 36px; padding: 6px 14px; margin-right: 16px; background: #703e8c;}
+
+
+
+
+
+
+

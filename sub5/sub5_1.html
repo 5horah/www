@@ -1,0 +1,114 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용-인재상</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content1.css">
+
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="visual">
+        <img src="./common/images/visual.jpg" alt="서브 비주얼 이미지">
+        <div class="visual_text">
+            <h3>TALENT RECRUITMENT</h3>
+            <p>세스코와 미래를 함께 열어 갈 여러분을 기다립니다.</p>
+        </div>
+    </div>
+    <div class="sub_menu">
+        <ul>
+            <li class="current"><a href="./sub5_1.html">인재상</a></li>
+            <li><a href="./sub5_2.html">인사제도</a></li>
+            <li><a href="./sub5_3.html">채용가이드</a></li>
+        </ul>
+    </div>
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map"><i class="fas fa-home"></i><span class="hidden">home</span> &gt; 인재채용 &gt; <strong>인재상</strong></div>
+            <h2>인재상</h2>
+            <p>함께할 첨단 <span>환경위생 전문가</span>를 기다리고 있습니다.</p>
+        </div>
+        <div class="content_area01">
+            <div class="content_topic">
+                <h3>함께 미래를 창조하는 세스코</h3>
+                <p>세스코는 성실, 창의, 인화를 기본 역량으로 인재상을 추구합니다.</p>
+            </div>
+            <ul class="type_text">
+                <li>
+                    <p>성실%</p>
+                    <dl>
+                        <dt><span>"</span> 끈기 + 책임감 <span>"</span></dt>
+                        <dd>주어진 일을 끈기있게 완수하고 주어진 일에 끝까지 책임지는 인재</dd>
+                    </dl>
+                </li>
+                <li>
+                    <p>창의%</p>
+                    <dl>
+                        <dt><span>"</span> 변화 + 도전정신 <span>"</span></dt>
+                        <dd>새로운 변화를 적극적으로 주도하고 최고를 위해 끊임없이 도전하는 인재</dd>
+                    </dl>
+                </li>
+                <li>
+                    <p>인화%</p>
+                    <dl>
+                        <dt><span>"</span> 협동심 + 배려 <span>"</span></dt>
+                        <dd>상대방을 우선적으로 배려하고 미래 번영을 위해 협동할 수 있는 인재</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div class="content_area02">
+            <div class="content_topic">
+                <h3>대한민국을 넘어<br>글로벌 환경위생 전문가 세스코</h3>
+                <p>세계 최고 수준의 전문성을 펼치는 세스코와 함께할 글로벌 인재를 모십니다.</p>
+                <a href="https://careers.cesco.co.kr/">온라인 입사지원 바로가기</a>
+            </div>
+        </div>
+        <div class="content_area03">
+            <div class="content_topic">
+                <h3>길을 제시하는 세스코</h3>
+                <p>함께 소통하며 미래를 창조하는 문화를 만듭니다.</p>
+            </div>
+            <ul class="ulture">
+                <li>
+                    <img src="./images/content1/culture_icon1.png" alt="">
+                    <strong>빠른 적응</strong>
+                    <p>신규 입사자에게는 빠른 적응을 위해 멘토·멘티 방식으로 빠르게 적응할 수 있습니다.</p>
+                </li>
+                <li>
+                    <img src="./images/content1/culture_icon2.png" alt="">
+                    <strong>직무역량</strong>
+                    <p>직무에 따른 역량을 체계적으로 개발할 수 있도록 전문 교육 프로그램을 지원합니다.</p>
+                </li>
+                <li>
+                    <img src="./images/content1/culture_icon3.png" alt="">
+                    <strong>리더역량</strong>
+                    <p>직책에 따라 리더 역량을 개발할 수 있도록 체계적인 리더십 교육을 진행합니다.</p>
+                </li>
+                <li>
+                    <img src="./images/content1/culture_icon4.png" alt="">
+                    <strong>교육과정</strong>
+                    <p>각종 업무에 맞는 교육 과정의 수료 과정을 걸쳐 전문적인 문화에 기여합니다.</p>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/sub5.js"></script>
+</body>
+</html>

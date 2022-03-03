@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 16px; color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #333; text-decoration: none}
+img{border: 0; vertical-align: top}
+
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+/* skipNav */
+#skipNav{position:relative; width:100%; overflow:hidden; z-index: 110;}
+#skipNav a{display:block; height:1px; margin-bottom:-1px; overflow:hidden; text-align:center; color:#fff; font-size:16px; font-weight: bold;}
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{display:block; height:auto; padding:10px 0; background:#1979bd;}
+
+/* font information
+font-family: 'Noto Sans KR', sans-serif; font-weight: 700;
+font-family: 'Roboto', sans-serif;
+*/
+
+/*공통영역*/
+.wrap{width: 100%; overflow: hidden;}
+
+/* header */
+#headerArea{width: 100%; height: 210px; position: fixed; left: 0; top: 0; z-index: 100; background: rgba(0, 0, 0, .5); border-bottom: 1px solid #ccc; transition: background .5s;}
+#headerArea .header_inner{width: 1200px; margin: 0 auto;}
+#headerArea .inner_section{overflow: hidden;}
+#headerArea .inner_section .logo{float: left; margin: 50px 0 0 537px;}
+#headerArea .inner_section .logo a{display: block; width: 127px; height: 60px; background: url(../images/header_logo.png) 0 0 no-repeat; background-position: center; text-indent: -999px; overflow: hidden;}
+#headerArea .inner_section .top_menu{float: right;}
+#headerArea .inner_section .top_menu ul{overflow: hidden; margin-top: 50px}
+#headerArea .inner_section .top_menu li{float: left; font-family: 'Roboto', sans-serif; font-weight: 400; margin: 16px 20px 0; position: relative; color: #fff;}
+#headerArea .inner_section .top_menu li:first-of-type::before{content: ''; width: 1px; height: 8px; background: #fff; display: block; position: absolute; top: 6.5px; right: -20px;}
+#headerArea .inner_section .top_menu li.af:first-of-type::before{background: #333;}
+#headerArea .inner_section .top_menu li a{color: #fff; position: relative; transition: all 0.3s ease;}
+#headerArea .inner_section .top_menu .topmenu_button01:hover a{color: #1979bd; position: relative;}
+#headerArea .inner_section .top_menu .topmenu_button01:hover a::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 2px; background: rgba(216, 39, 35, 0.6); position: absolute; left: 50%; bottom: 24px; }
+#headerArea .inner_section .top_menu .topmenu_button02{float: right; margin: 0 50px 0 20px;}
+#headerArea .inner_section .top_menu .topmenu_button02 a{display: block; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 0.875em; background: #1979bd; border-radius: 4px; padding: 16px 24px; transition: all 0.3s ease;}
+#headerArea .inner_section .top_menu .topmenu_button02:hover a{color:#fff; background: #1979bd; border-radius: 5px;}
+
+#headerArea .inner_section .top_menu li i{margin-left: 2px;}
+
+#gnb{clear: both; width: 1200px;} 
+#headerArea #gnb ul.dropdownmenu{float:left; width: 100%;}
+#headerArea #gnb ul.dropdownmenu li.menu{position:relative; float:left; width:16.66%; height: 58.89px; margin: 30px 0 0;}
+#headerArea #gnb ul.dropdownmenu li a.depth1{display:block; padding: 15px 0;text-align: center; transition: all .5s; color: #fff; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 1.250em; position: relative;}
+#headerArea #gnb ul.dropdownmenu li a.depth1::before{content: ''; display: block; width: 0; height: 4px; border-radius: 2px; position: absolute; left: 50%; bottom: 5px; background: rgba(216, 39, 35, 0.6); transition: all 0.3s ease;}
+#headerArea #gnb ul.dropdownmenu li:hover a.depth1::before{width: 110px; left: 23%;}
+
+/* header > 2depth */
+#headerArea #gnb ul.dropdownmenu ul{width:100%; height:190px; position:absolute; top:50px; left:0; padding-top:15px; line-height:2em; display:none;}
+#headerArea #gnb ul.dropdownmenu ul li{ text-align:center; font-weight:bold;}
+#headerArea #gnb ul.dropdownmenu ul li a{display:block; padding: 4px 0; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; transition: all ;}
+#headerArea #gnb ul.dropdownmenu ul li a:hover{font-weight: 500;}
+
+/* footer*/
+#footerArea{width: 100%; clear: both; background: #f8f8f8; height: 306px;}
+#footerArea .footer_inner{width: 1200px; margin: 0 auto;}
+#footerArea .footer_top{height: 77.55px; border-bottom: 1px solid #e1e1e1;}
+#footerArea .footer_top .terms{overflow: hidden; margin: 0 30px; float: left;}
+#footerArea .footer_top .terms ul{overflow: hidden; float: left;}
+#footerArea .footer_top .terms li{float: left; margin-right: 50px; margin: 24px 25px;}
+#footerArea .footer_top .terms li:nth-of-type(1){margin-left: 0;}
+#footerArea .footer_top .terms li a{display: block; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; color: #666; line-height: 26px; transition: all 0.3s ease;}
+#footerArea .footer_top .terms li a:hover{color: #333; font-weight: 500}
+#footerArea .footer_top .footer_family{float: right; margin: 16px 30px 16px 0; width: 150px; height: 26px; border: 1px solid #999; border-radius: 4px; padding: 8px 0 8px 16px; position: relative;}
+#footerArea .footer_top .footer_family a{display: block; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 0.875em; color: #666; line-height: 24px; position: relative;}
+#footerArea .footer_top .footer_family a:hover{color: #333;}
+#footerArea .footer_top .footer_family i{display:block; font-weight: 700; line-height: 16px; color: #666; position: absolute; right: 16px; top: 3px;}
+#footerArea .footer_top .footer_family .family_list{position: absolute; left: -1px; top: 44px; width: 166px; border: 1px solid #999; display: none; background: rgba(248, 248, 248, .8); border-radius: 4px;}
+#footerArea .footer_top .footer_family .family_list a{display: block; padding: 8px 0 8px 16px; font-family: 'Noto Sans KR', sans-serif; color: #666;}
+#footerArea .footer_top .footer_family .family_list li:hover{background: rgba(255, 255, 255, .9); border-radius: 4px;}
+#footerArea .footer_top .footer_family .family_list li:hover a{color: #333;}
+
+#footerArea .footer_info{margin: 32px 30px 56px; overflow: hidden;}
+#footerArea .footer_info .footer_logo{float: left; margin-right: 32px;}
+#footerArea .footer_info address{float: left; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 0.875em; color: #666; line-height: 1.5em;}
+#footerArea .footer_info address span{display:block; margin-top: 16px;}
+#footerArea .footer_info .footer_bottom{float: right;}
+#footerArea .footer_info .footer_bottom ul{overflow: hidden;}
+#footerArea .footer_info .footer_bottom li{float: left; margin-right: 8px;}
+#footerArea .footer_info .footer_bottom li:last-of-type{margin: 0;}
+#footerArea .footer_info .footer_bottom li:nth-of-type(1) a{display: block; width: 28px; height: 28px; background: url(../images/footer_bicon.png); transition: all 0.3s ease;}
+#footerArea .footer_info .footer_bottom li:nth-of-type(1) a:hover{display: block; width: 28px; height: 28px; background: url(../images/footer_bicon2.png);}
+#footerArea .footer_info .footer_bottom li:nth-of-type(2) a{display: block; width: 28px; height: 28px; background: url(../images/footer_yicon.png); transition: all 0.3s ease;}
+#footerArea .footer_info .footer_bottom li:nth-of-type(2) a:hover{display: block; width: 28px; height: 28px; background: url(../images/footer_yicon2.png);}
+#footerArea .footer_info .footer_bottom li:nth-of-type(3) a{display: block; width: 28px; height: 28px; background: url(../images/footer_ficon.png); transition: all 0.3s ease;}
+#footerArea .footer_info .footer_bottom li:nth-of-type(3) a:hover{display: block; width: 28px; height: 28px; background: url(../images/footer_ficon2.png);}
+#footerArea .footer_info .footer_bottom li:nth-of-type(4) a{display: block; width: 28px; height: 28px; background: url(../images/footer_iicon.png); transition: all 0.3s ease;}
+#footerArea .footer_info .footer_bottom li:nth-of-type(4) a:hover{display: block; width: 28px; height: 28px; background: url(../images/footer_iicon2.png);}
+
+/*top move*/
+.topMove{display: block; background: rgba(25, 121, 189, .8); width: 60px; height: 60px; position: fixed; left: 50%; bottom: 50px; margin-left: 650px; z-index: 50; border-radius: 100%; box-shadow: 2px 2px 30px 0 rgb(0 0 0 / 10%);}
+.topMove:hover{background: rgba(25, 121, 189, 1);}
+.topMove i {font-size: 1.25em; color: #fff; position: relative; top: 19px; left: 22px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

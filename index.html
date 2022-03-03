@@ -1,0 +1,364 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cesco</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/main.css">
+
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script src="./mainjs/mainpopup.js"></script>
+</head>
+
+<body>
+    <? include "./common/main_header.html" ?>
+    <div class="visual">
+        <div class="gallery">
+            <ul>
+                <li class="link1">
+                    <img src="./images/visual1.jpg" alt=''>
+                    <div class="visual_slogan">
+                        <p><span>TRUSR CESCO</span>세계 최고 수준의<br>기술력과 인프라를 보유한 ‘세스코’</p>
+                        <a href="./sub1/sub1_1.html">View More</a>
+                    </div>
+                </li>
+                <li class="link2">
+                    <img src="./images/visual2.jpg" alt=''>
+                    <div class="visual_slogan">
+                        <p><span>TECH-VALLEY</span>친환경 약제 및 자체 생산-유통<br>시스템 구축으로 ‘맞춤 서비스 구현’</p>
+                        <a class="viewmore_button" href="#">View More</a>
+                    </div>
+                </li>
+                <li class="link3">
+                    <img src="./images/visual3.jpg" alt=''>
+                    <div class="visual_slogan">
+                        <p><span>TESTING CESCO</span>세계적 수준의 시험분석센터<br>보유로 ‘다양한 분석 서비스 제공’</p>
+                        <a class="viewmore_button" href="./sub2/sub2_1.html">View More</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="dock">
+            <span class="mbutton  btn1"></span>
+            <span class="mbutton  btn2"></span>
+            <span class="mbutton  btn3"></span>
+            <span class="ps"></span>
+        </div>
+    </div>
+    <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>
+        <div class="business">
+            <div class="business_topic">
+                <span class="t_mid">세스코가 여러분의 미소를 지켜드립니다.</span>
+                <h3>SMILE WITH<span class="t_emphasis">CESCO</span></h3>
+                <p class="t_content">토탈 위생솔루션을 제공하여 쾌적한 생활 공간을 약속드립니다.</p>
+            </div>
+            <ul>
+                <li>
+                    <div class="business_icon">
+                        <img class="icon_af" src="./images/business_icon01.png" alt="">
+                        <img class="icon_be" src="./images/business_icon05.png" alt="">
+                    </div>
+                    <h4>글로벌 대표 브랜드 도약</h4>
+                    <p>환경친화적 위생 시스템 개발 및 환경오염 최소화로 환경가치 창출</p>
+                </li>
+                <li>
+                    <div class="business_icon">
+                        <img class="icon_af" src="./images/business_icon02.png" alt="">
+                        <img class="icon_be" src="./images/business_icon06.png" alt="">
+                    </div>
+                    <h4>생활환경 위생기업</h4>
+                    <p>깨끗한 생활환경을 만들어<br>건강하고 보다 나은 삶에 기여</p>
+                </li>
+                <li>
+                    <div class="business_icon">
+                        <img class="icon_af" src="./images/business_icon03.png" alt="">
+                        <img class="icon_be" src="./images/business_icon07.png" alt="">
+                    </div>
+                    <h4>최고 품질가치 창출</h4>
+                    <p>최대 연구소를 보유하여 개발<br>및 생산분야 최고 품질가치창출</p>
+                </li>
+                <li>
+                    <div class="business_icon">
+                        <img class="icon_af" src="./images/business_icon04.png" alt="">
+                        <img class="icon_be" src="./images/business_icon08.png" alt="">
+                    </div>
+                    <h4>환경가치 창출 사회공헌</h4>
+                    <p>환경친화적 위생 시스템 개발 및 환경오염 최소화로 환경가치 창출</p>
+                </li>
+            </ul>
+        </div>
+        <div class="service">
+            <div class="service_content">
+                <span class="t_mid">맞춤 솔루션으로 서비스를 추천해드립니다.</span>
+                <h3>WHAT <span class="t_emphasis">SERVICE</span> DO YOU <span class="t_emphasis">WANT</span>?</h3>
+                <p class="t_content">고객중심적인 사고로 혁신적인 첨단위생솔루션과 전문서비스를 통해 책임을 다하겠습니다.</p>
+                <ul class="tab_groub">
+                    <li><a class="tab tab1" href="#"># 세스코 솔루션</a></li>
+                    <li><a class="tab tab2" href="#"># 세스코 서비스</a></li>
+                </ul>
+                <div class="tab_content">
+                    <ul class="management_solution">
+                        <li>
+                            <a href="./sub2/sub2_1.html">
+                                <h4>통합해충방제</h4>
+                                <img src="./images/service_img01.png" alt="해충방제 이미지">
+                                <p><span>#</span> 첨단 통합방제 프로그램<br><span>#</span> 확실한 시설진단과 정기관리<br><span>#</span> 사전 방제체계 구축</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub2/sub2_1.html">
+                                <h4>통합 이물분석</h4>
+                                <img src="./images/service_img04.png" alt="통합 이물분석 이미지">
+                                <p><span>#</span> 국내 유일 이물분석 센터 보유<br><span>#</span> 최적의 전문 분석 기법 사용<br><span>#</span> 이물 저감화를 위한 공동실험 진행</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub2/sub2_1.html">
+                                <h4>식품안전</h4>
+                                <img src="./images/service_img06.png" alt="식품안전 이미지">
+                                <p><span>#</span> 식품 시료 분석 및 환경 모니터링<br><span>#</span> HACCP 등 컨설팅 진행<br><span>#</span> 식품전문안전 교육 실시</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="management_service">
+                        <li>
+                            <a href="./sub2/sub2_2.html">
+                                <h4>비래해충</h4>
+                                <img src="./images/service_img05.png" alt="바이러스케어 이미지">
+                                <p><span>#</span> 24h 첨단 공기관리 시스템<br><span>#</span> 확실한 시설진단과 정기관리<br><span>#</span> 개인 위생 전문 솔류션</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub2/sub2_2.html">
+                                <h4>향균·공기</h4>
+                                <img src="./images/service_img03.png" alt="공기질안심관리 이미지">
+                                <p><span>#</span> 24시간 자동화 향/살균 시스템<br><span>#</span> 주기적 전문가 관리 시스템<br><span>#</span> 세스코만의 차별화된 리포트 제공</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub2/sub2_2.html">
+                                <h4>수질안심</h4>
+                                <img src="./images/service_img02.png" alt="수질안심관리 이미지">
+                                <p><span>#</span> 차별화된 워터 솔루션<br><span>#</span> 수질관리 전문가 케어<br><span>#</span> 세스케어 워터존 케어 서비스</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="members">
+            <span class="t_mid">명실상부한 건강한 생활환경을 약속하는 위생마크</span>
+            <h3>WHY <span class="t_emphasis">CESCO MEMBERS</span></h3>
+            <p class="t_content">위생에 대한 믿음 과 안심을 약속하는 ‘세스코 멤버스’는<br>대한민국의 위생문화를 책임진다는 사명감으로 성장해나갈 것입니다.</p>
+            <a class="viewmore_button" href="./sub3/sub3_2.html">View More</a>
+            <div class="chart">
+                <div class="second circle">
+                    <div class="text_info">
+                        <strong class='text_info01'></strong>
+                        <p class='text_info02'>세스코 멤버스 도입 후 매출상승</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <? include "./lib/func.php"; ?> 
+
+        <div class="review">
+            <div class="review_content">
+                <div class="review_topgroup">
+                    <div class="review_topic">
+                        <span class="t_mid">수많은 리뷰로 증명하는 세스코 서비스</span>
+                        <h3>BEST <span class="t_emphasis">REVIEW</span></h3>
+                        <p class="t_content">세스코 서비스에 관한 생생한 이야기를 확인해보세요.</p>
+                        <a class="viewmore_button" href="./concert/list.php">View More</a>
+                    </div>
+                    <div class="btn_box">
+                        <a href="#" class="m1 button"><i class="fas fa-chevron-circle-left"></i><span class="hidden">이전버튼</span></a>
+                        <a href="#" class="m2 button"><i class="fas fa-chevron-circle-right"></i><span class="hidden">다음버튼</span></a>
+                    </div>
+                </div>
+                <div class="slide_gallerybox">
+                    <div class="slide_gallery">
+                        <? latest_article("concert", 6, 100); ?>
+                        <!-- <ul>
+                            <li class="review_manag">
+                                <a href="#">
+                                    노후된 저희 집 해충때문에 아이를 키우는 엄마로서 걱정이 많았는데 세스코에서 맞춤 서비스를 제공하는 덕분에 저희 집에 딱 맞는 솔루션으로 한시름 덜었습니다.
+                                    <div class="review_prinfo">
+                                        <img src="./images/review_prf01.png" alt="">
+                                        <div class="prinfo_text">
+                                            <span class="name">happy_mom</span>
+                                            <span class="date">2021.11.11</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="review_manag">
+                                <a href="#">
+                                    요즘은 어느 음식점을 가도 맛만큼이나 중요한게 바로 위생이죠. 그래서 저는 식당을 갈때 세스코 인증 마크부터 확인합니다. 마크가 없으면 왠지 불안한
+                                    느낌...
+                                    <div class="review_prinfo">
+                                        <img src="./images/review_prf02.png" alt="">
+                                        <div class="prinfo_text">
+                                            <span class="name">happy_mom</span>
+                                            <span class="date">2021.11.11</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="review_manag">
+                                <a href="#">
+                                    작은 식당을 운영하는 자영업자입니다. 아무리 위생에 신경을 써도 눈에 보이지않아 세스코를 신청했습니다. 신경 못썼던 부분도 꼼꼼하게 체크해주시고 만족합니다.
+                                    <div class="review_prinfo">
+                                        <img src="./images/review_prf03.png" alt="">
+                                        <div class="prinfo_text">
+                                            <span class="name">happy_mom</span>
+                                            <span class="date">2021.11.11</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="review_manag">
+                                <a href="#">
+                                    갑자기 안보이던 바퀴벌레가 보이면서 불안한 마음에 진단을 받았는데 그냥 벌레가 아니라 일본바퀴벌레라는 진단을 받고 그에 대한 솔루션을 받았습니다.!
+                                    <div class="review_prinfo">
+                                        <img src="./images/review_prf04.png" alt="">
+                                        <div class="prinfo_text">
+                                            <span class="name">happy_mom</span>
+                                            <span class="date">2021.11.11</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="review_manag">
+                                <a href="#">
+                                    곧 오픈를 앞두고 있는데 건물이 오래돼서 벌레들이 많을까봐 걱정이었습니다. 하지만 세스코 진단으로 철저하게 예방을 받고 마크를 받아 훨씬 든든해졌어요.
+                                    <div class="review_prinfo">
+                                        <img src="./images/review_prf05.png" alt="">
+                                        <div class="prinfo_text">
+                                            <span class="name">egghouse_cafe</span>
+                                            <span class="date">2021.11.11</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="review_manag">
+                                <a href="#">
+                                    며칠 여행을 다녀오면서 관리를 못했더니 날파리가 심하게 생겨 몇일동안 고생했었는데 세스코서비스를 신청하고 날파리 해충알까지 말끔히 정리했습니다.!
+                                    <div class="review_prinfo">
+                                        <img src="./images/review_prf06.png" alt="">
+                                        <div class="prinfo_text">
+                                            <span class="name">abc123_01</span>
+                                            <span class="date">2021.11.11</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promotion">
+            <div class="promotion_content">
+                <div class="promotion_topgroup">
+                    <div class="promotion_topic">
+                        <span class="t_mid">다양한 홍보자료로 세스코 소식을 전달드립니다.</span>
+                        <h3>CESCO <span class="t_emphasis">PROMOTION</span></h3>
+                        <p class="t_content">세스코는 여러분의 쾌적하고 건강한 삶을 약속드립니다.</p>
+                        <a class="viewmore_button" href="./sub4/sub4_3.html">View More</a>
+                    </div>
+                    <div class="btn_box">
+                        <a href="#" class="m1 button"><i class="fas fa-chevron-circle-left"></i><span class="hidden">이전버튼</span></a>
+                        <a href="#" class="m2 button"><i class="fas fa-chevron-circle-right"></i><span class="hidden">다음버튼</span></a>
+                    </div>
+                </div>
+                <div class="slide_gallerybox2">
+                    <div class="slide_gallery2">
+                        <ul>
+                            <li class="promotion_manag">
+                                <a href="./sub4/sub4_3.html">
+                                    <div class="img_area"><img src="./images/promotion_ad01.jpg" alt="믿고먹는 세상의 시작, 화이트 세스코_60초ver 영상 썸네일"></div>
+                                    <p><span>세스코 Food Safety</span>믿고먹는 세상의 시작, 화이트 세스코_60초</p>
+                                </a>
+                            </li>
+                            <li class="promotion_manag">
+                                <a href="./sub4/sub4_3.html">
+                                    <div class="img_area"><img src="./images/promotion_ad02.jpg" alt="마시는 과학 물의 스타일이되다. 영상 썸네일"></div>
+                                    <p><span>세스코 Water Safety</span>마시는 과학 물의 스타일이되다. 스마트핏 직수 정수기</p>
+                                </a>
+                            </li>
+                            <li class="promotion_manag">
+                                <a href="./sub4/sub4_3.html">
+                                    <div class="img_area"><img src="./images/promotion_ad03.jpg" alt="해충은 강하지만 세스코는 더 강합니다.- 세스코 무료진단(세스코 멤버스)영상 썸네일"></div>
+                                    <p><span>세스코 Pest Safety</span>세스코 무료진단_해충은 강하지만 세스코는 더 강합니다.</p>
+                                </a>
+                            </li>
+                            <li class="promotion_manag">
+                                <a href="./sub4/sub4_3.html">
+                                    <div class="img_area"><img src="./images/promotion_ad04.jpg" alt="스마트핏 직수 정수기/메인편_50s 영상 썸네일"></div>
+                                    <p><span>세스코 Water Safety</span>세스코 워터솔루션, 지금 시작합니다_기능편></p>
+                                </a>
+                            </li>
+                            <li class="promotion_manag">
+                                <a href="./sub4/sub4_3.html">
+                                    <div class="img_area"><img src="./images/promotion_ad05.jpg" alt="[세스코 Air] 브랜드 런칭 B(60s) 영상 썸네일"></div>
+                                    <p><span>세스코 Air Safety</span>기필코! 결단코! 한사코! 세스코가 당신의 공기를 지켜드립니다.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="notice">
+            <span class="t_mid">공지사항</span>
+            <h3>NOTIC</h3>
+            <p class="t_content">세스코의 새로운 소식과 행사내용을 전해드립니다.</p>
+            <a class="viewmore_button" href="./greet/list.php">View More</a>
+            <? latest_article("greet", 6, 500); ?>
+        </div>
+    </article>
+    <? include "./common/main_footer.html" ?>
+    <script src="./mainjs/move.js"></script>
+    <script src="./mainjs/slide.js"></script>
+    <script src="./mainjs/circle-progress.js"></script>
+    <script src="./mainjs/main.js"></script>
+
+    <!-- 공지사항 팝업 -->
+    <div id="showimage" style="z-index:99; position:absolute; width:322px; left: 50px; top: 260px;">
+        <script>
+            function closeWin() {
+                var chk = document.getElementById('Notice')
+                if (chk.checked) {
+                    setCookie("Notice", "done", 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+                }
+            }
+            if (getCookie("Notice") == "done") {
+                hidebox();
+            }
+        </script>
+        <div>
+            <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+        </div>
+        <div style="text-align: center; color:#f8f8f8; margin-top: 8px;">
+            <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+            <a href="#" onclick="closeWin(); hidebox(); return false;" style="color: #f8f8f8;"> [close] </a>
+        </div>
+    </div>
+</body>
+
+</html>

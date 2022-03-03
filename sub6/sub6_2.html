@@ -1,0 +1,236 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터-자주묻는질문</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content2.css">
+
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="visual">
+        <img src="./common/images/visual.jpg" alt="서브 비주얼 이미지">
+        <div class="visual_text">
+            <h3>CUSTOMER SERVICE</h3>
+            <p>세스코에 대한 모든 궁금증을 해결해드립니다.</p>
+        </div>
+    </div>
+
+    <div class="sub_menu">
+        <ul>
+            <li><a href="./sub6_1.html">고객상담신청</a></li>
+            <li class="current"><a href="./sub6_2.html">자주묻는질문</a></li>
+            <li><a href="./sub6_3.html">AS서비스안내</a></li>
+        </ul>
+    </div>
+
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map"><i class="fas fa-home"></i><span class="hidden">home</span> &gt; 고객센터 &gt; <strong>자주묻는질문</strong></div>
+            <h2>자주묻는질문</h2>
+            <p>고객님들이 <span>자주 문의하시는 질문</span>을 한눈에 확인하실 수 있습니다.</p>
+        </div>
+        <div class="content_area01">
+            <div class="content_topic">
+                <h3>FAQ</h3>
+                <p>원하시는 답변을 찾지 못하셨다면 고객상담신청을 통해 문의해주세요.</p>
+                <a href="./sub6_1.html">고객상담신청</a>
+            </div>
+            <div class="content_tab">
+                <ul>
+                    <li><a class="tab tab1" href="#">해충관련문의</a></li>
+                    <li><a class="tab tab2" href="#">서비스 및 비용문의</a></li>
+                    <li><a class="tab tab3" href="#">회사문의</a></li>
+                    <li><a class="tab tab4" href="#">기타</a></li>
+                </ul>
+            </div>
+
+            <div class="contlist">
+                <h4>해충관련문의</h4>
+                <a class="all" href="#">모든 답변 보기<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                <ul>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>바퀴와 개미는 천적인가요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">개미가 많은 집은 바퀴가 없고 바퀴가 많은 집에는 개미가 없다고들 합니다. 바퀴와 개미가 천적관계는 아니고 실내에 서식하는 장소가 좁은 틈새로 동일하기 때문에 서로 경쟁관계에 있기 때문입니다. 그러나 바퀴와 개미가 동시에 살고 있는 집들도 많이 있습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>개미는 어떤 음식을 좋아하나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">개미는 종류별로 좋아하는 먹이가 다르고, 같은 종류여도 계절과 환경상태에 따라 좋아하는 먹이가 다릅니다. 주로 군체의 밀도를 높이는 시기에는 단백질이 많이 든 음식을 찾고, 평소에는 당분이 많이 함유된 음식을 찾습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>집에서 주로 보이는 빨간 개미는 어떤 개미인가요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">실내에서 주로 서식하는 작고 붉은 빛이 도는 개미는 애집개미(Monomorium pharaohnis) 입니다. 열대성 개미로 실내에서 생활을 하며 온도27~30℃ 습도 70% 정도인 곳에 집을 짓습니다. 특별히 집을 만들기 보다는 실내의 벽이나 천정 틈새, 가구속, 마루 밑 등 어둡고 따뜻한 곳에서 서식하기를 좋아합니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>애집개미는 어떤 피해를 줄 수 있나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">애집개미는 음식물을 오염시키고 몸에 묻은 병원균을 전파하기도 합니다. 또한 천식 또는 알러지를 유발할 수 있으며 사람을 직접 물어서 2차 독성까지 유발합니다. 그렇기 때문에 아기가 있는 집은 특히 유의하셔야 합니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>애집개미는 왜 없애기가 어렵지요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">야외성 개미의 여왕개미가 1마리인 것에 비해 애집개미 한 군체에 여왕개미가 수십~수백마리가 존재하며 한 여왕개미가 400마리 이상의 일개미를 생산할 수 있습니다. 여왕개미는 거의 서식처 밖으로 나오지 않고 내부에서 숫개미와 동종 교미하므로 완전 구제가 힘듭니다. 또한 주위 환경이 악화되면 여러 곳으로 쉽게 분산 / 확산하므로 에어졸 등의 약제를 섣불리 사용하였을 경우 집안 전체로 개미가 확산될 수 있습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>개미가 없었는데 요즘들어서 보이네요. 어디서 들어온걸까요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">보통 가정집에서 개미가 발생하는 경우는 화분이나 물건, 가구 등이 들어올 때 유입되기도 하고 공동주택의 경우 주변의 집에서 침입하기도 합니다. 보통의 경우 아파트의 한 세대에서 개미가 발견되면 같은 라인의 세대에서도 개미가 존재하는 경우가 대부분입니다.  아파트인 경우에는 아파트 상하층 벽면틈새를 이용하여 침입하기도 합니다. 그러므로 언제든지 실내유입이 가능하다는 말입니다. 그리고 개미가 고층아파트의 최상층에서도 발생하는 것으로 보아 사람이 있는 곳이라면 어디든지 발생이 가능합니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>개미가 많은지, 줄을 지어서 다니고 있습니다.<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">개미는 길 페로몬(trail pheromone)을 분비하여 그 페로몬이 묻어 있는 길로만 다니기 때문에 한 줄로 이동을 합니다. 이런 경우를 보셨다면 개미의 서식밀도가 높다는 것을 의미합니다. 길 페로몬을 없애더라도 다시 분비하여 묻히기 때문에 단순히 길 페로몬을 제거하는 것 만으로는 개미의 서식을 막을 수 없습니다</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>집먼지진드기가 유발하는 질병은 무엇인가요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">공기 중에 집먼지진드기의 배설물이 쌓이게 되면 호흡기를 통해 흡입되면서 천식, 비염등의 호흡기 질환을 일으킬 수 있으며, 면역력이 약한 사람의 피부에 닿을 경우 가려움, 아토피피부염 등의 알러지성 질환을 일으킬 수 있습니다.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contlist">
+                <h4>서비스 및 비용문의</h4>
+                <a class="all" href="#">모든 답변 보기<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                <ul>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>파리도 잡아주나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">네, 파리는 외부에서 발생하여 실내의 음식물 냄새, 불빛 그리고 안정된 기류에 유인되어 지속적으로 침입합니다. 약제를 살포하여 관리하는 것은 한계가 있으므로 물리적으로 유인물질을 없애면 그 침입 밀도를 낮출 수 있습니다. 특히, 쓰레기통에는 뚜껑을 덮어 사용하고, 주변 쓰레기 정리를 하고 침입 경로의 창문 및 출입문을 닫아서 관리하거나 방충망을 설치하여야 침입을 예방할 수 있습니다. 그리고 전자포충등과 같은 물리적인 포충기구를 설치하는 것도 좋은 방법입니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>머리카락이 쥐끈끈이에 묻게되면?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">머리카락이 쥐끈끈이가 붙게 되면 헤어 무스를 이용하여 닦아 내고 따뜻한 물에 샴프나 린스를 이용하여 헹궈내면 됩니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>세스코에서 설치한 쥐약을 먹은 쥐는 어떻게 되나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">바퀴는 집합 페르몬 (aggregation pheromone) 이 있어 군집생활을 합니다. 외부에서 유입된 바퀴는 다른 바퀴에게서 나온 집합 페르몬에 의해 바퀴가 서식하였던 장소로 모여들기 때문에 한 두 마리가 발견되었다면 보이지 않는 곳에 더 많은 바퀴들이 있을 수 있기 때문에 서비스를 받으시는 것이 좋습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>바퀴 한 두 마리가 아주 가끔 보이는 정도인데 서비스가 필요한가요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">애집개미는 음식물을 오염시키고 몸에 묻은 병원균을 전파하기도 합니다. 또한 천식 또는 알러지를 유발할 수 있으며 사람을 직접 물어서 2차 독성까지 유발합니다. 그렇기 때문에 아기가 있는 집은 특히 유의하셔야 합니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>바퀴방제 서비스는 어떤 식으로 하나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">해충 전문가인 서비스컨설턴트(SC)가 직접 고객님댁을 방문하여, 먼저 바퀴의 흔적을 조사하여 바퀴의 종류와 서식처, 서식밀도를 파악하고 주로 먹이약제를 이용하여 방제서비스를 실시합니다. 저희 먹이약제는 냄새가 없고 인체에 안전한 약이므로 별도의 소독 준비를 하시지 않아도 됩니다. 완전 퇴치한 후에도 (장바구니, 식자재, 옆집을 통해) 바퀴는 계속 침입하는데 방치하면 다시 문제가 유발되므로 정기적인 관리가 필요로 합니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>바퀴약제를 먹은 바퀴는 어떻게되나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">바퀴 먹이약제를 먹은 바퀴는 에너지 합성 차단 효과에 의하여 힘없이 비실비실 돌아다니다가 2~3일 안에 죽게 됩니다. 바퀴는 군집성이 있어 자기 서식처로 돌아가고 먹었던 것을 토하는 습성, 배설물을 먹는 습성, 동료의 사체를 먹는 바퀴의 습성에 의하여 서식처의 동료 바퀴까지 연쇄 살충 효과를 나타냅니다. 죽은 바퀴는 동료들의 먹이가 되므로 자연히 청소가 됩니다. 연쇄 살충 효과를 위하여 에어졸 등 타 약제를 사용하지 마시기 바랍니다.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contlist">
+                <h4>회사문의</h4>
+                <a class="all" href="#">모든 답변 보기<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                <ul>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>CESCO의 의미는 무엇인가요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">CESCO는 Chunwoo Environment Service CO.,Ltd.의 약자로서 설립 시 회사명인 전우방제(全宇防除)의 영문 표기입니다. 1976년 전 우주를 방제한다는 의지를 가지고 전우방제 (全宇防除)라는 사명(社名)으로 서비스를 실시하였으며, 1997년 내부 경영혁신 단행의 하나로 합리적이고 발전적인 업무처리를 위한 체계를 확립하고, 세계화를 지향하기 위하여 전우방제에서 세스코로 사명을 변경하였습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>세스코에서도 대리점을 개설하시나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">세스코는 전국 어느 곳에서든지 표준화된 서비스와 고객만족을 드리기 위해 전국 50개 지사를 직영체제로 운영하고 있으며, 별도의 대리점은 개설하고 있지 않습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>외국에서도 세스코 서비스를 받을 수 있나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">현재 세스코는 중국에 현지 법인을 설립하여 사업활동을 진행하고 있습니다. 따라서 중국에서 저희 세스코 서비스를 받으실 수 있으며, 앞으로 보다 많은 지역에서 서비스를 제공해 드리기 위해 노력하겠습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>세스코 서비스컨설턴트가 되려면 어떻게 해야하나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">세스코 서비스컨설턴트가 되기 기술교육과 현장실습 과정을 포함한 12개월의 집중교육을 거쳐야 하며, 이 과정을 통과한 자에게 방제전문가 자격이 주어집니다. 세스코 서비스컨설턴트의 채용 부분은 홈페이지 내의 기업정보의 인재채용메뉴에 자세하게 설명되어 있으므로 참고하시기 바랍니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>세스코 우먼은 없나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">세스코는 남성 뿐만 아니라 여성분들도 세스코 서비스컨설턴트로 많이 활동하고 있습니다. 모든 세스코 서비스컨설턴트 일정의 교육기간을 통해 세스코 서비스컨설턴트로 인정되며 각 고객의 상황 및 요구에 맞춰 담당 세스코 서비스컨설턴트가 방문합니다.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contlist">
+                <h4>기타</h4>
+                <a class="all" href="#">모든 답변 보기<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                <ul>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>제 개인 정보를 도용하고 있는 사람을 신고하고 싶어요.<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">㈜ 세스코 (이하 “회사”)는 회원님의 개인정보를 안전하게 보호하기 위하여 최선의 노력을 다하고 있습니다. “정보통신망 이용촉진 및 정보보호 등에 관한 법률”과 “개인정보 보호법” 등 개인정보와 관련된 법령 상의 규정들과 방송통신위원회 및 미래창조과학부, 안전행정부 등의 유관기관이 제정한 가이드라인을 준수하고 있습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>탈퇴 후 개인정보 보유기간이 있나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">소비자 보호에 관한 법률 제6조(거래기록의 보전 등) 및 동법 시행령 제6조에 의거,<br>- 계약 또는 청약철회 등에 관한 기록 : 5년(전자상거래등에서의 소비자보호에 관한 법률)<br>- 대금결제 및 재화 등의 공급에 관한 기록 : 5년(전자상거래등에서의 소비자보호에 관한 법률)<br>- 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년(전자상거래등에서의 소비자보호에 관한 법률) 동안 보관 되고,<br>개인정보는 법률에 의한 경우가 아니고서는 보유기간은 없습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>탈퇴와 동시에 개인정보가 삭제되나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">소비자 보호에 관한 법률 제6조(거래기록의 보전 등) 및 동법 시행령 제6조에 의거,<br>- 계약 또는 청약철회 등에 관한 기록 : 5년(전자상거래등에서의 소비자보호에 관한 법률)<br>- 대금결제 및 재화 등의 공급에 관한 기록 : 5년(전자상거래등에서의 소비자보호에 관한 법률)<br>- 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년(전자상거래등에서의 소비자보호에 관한 법률) 동안 보관 되고,<br>개인정보는 법률에 의한 경우가 아니고서는 삭제 처리 됩니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>사이트 회원 탈퇴 후 재 가입할 수 있나요?<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">탈퇴 후 재 가입에 대한 제한은 따로 없지만 이전에 사용하시던 아이디는 다시 사용하실 수 없습니다.</p>
+                    </li>
+                    <li class="article hide">
+                        <p class="q">
+                            <a class="trigger" href="#"><span>Q.</span>장기 미 이용 계정을 삭제하고 싶어요.<i class="fas fa-plus"></i><span class="hidden">답변보기</span></a>
+                        </p>
+                        <p class="a">세스코는 남성 뿐만 아니라 여성분들도 세스코 서비스컨설턴트로 많이 활동하고 있습니다. 모든 세스코 서비스컨설턴트 일정의 교육기간을 통해 세스코 서비스컨설턴트로 인정되며 각 고객의 상황 및 요구에 맞춰 담당 세스코 서비스컨설턴트가 방문합니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/sub6.js"></script>
+</body>
+</html>

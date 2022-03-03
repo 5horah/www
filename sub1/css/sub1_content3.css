@@ -1,0 +1,31 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 기업소개>연혁 내용*/
+
+/* 공통영역 */
+#content .htab_current a{color: #1979bd; font-weight: 700;}
+#content .htab_current a::before{background: #1979bd;}
+#content .htab_current a::after{opacity: 1;}
+#content .htab_current span{color: #1979bd; font-weight: 700;}
+
+/*content_area*/
+#content .content_area .content_topic{text-align: center; position: relative;}
+#content .content_area .content_topic::before{content: ''; display: block; width: 2000px; height: 1px; background: #ececec; position: absolute; bottom: 115px; left: 50%; margin-left: -1000px;}
+#content .content_area .content_topic p{font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 2.25em; color: #333; margin-top: 40px; margin-bottom: 80px;}
+#content .content_area .content_topic .tab_menu{overflow: hidden;}
+#content .content_area .content_topic .tab_menu li{float: left; width: 120px; margin: 0 240px 80px 0;}
+#content .content_area .content_topic .tab_menu li:last-of-type{margin-right: 0;}
+#content .content_area .content_topic .tab_menu li .tab{display: block; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.25em; line-height: 25px; position: relative; color: #666;}
+#content .content_area .content_topic .tab_menu li:hover .tab::before{transform: scale(1.6);}
+#content .content_area .content_topic .tab_menu li .bedock::before{content: ''; display: block; width: 12px; height: 12px; border-radius: 100%; background: #cecece; position: absolute; left: 50%; bottom: 30px; margin-left: -6px; transition: all 0.5s;}
+#content .content_area .content_topic .tab_menu li .tab span{display: block; font-family: 'Roboto', sans-serif; font-size: 0.9em; margin-top: 32px;}
+.afdock::after{content: ''; display: block; width: 18px; height: 18px; border-radius: 100%; border: 1px solid #1979bd; position: absolute; left: 50%; bottom: 25px; margin-left: -10.21px;}
+.afdock::before{content: ''; display: block; width: 12px; height: 12px; border-radius: 100%; background: #1979bd; position: absolute; left: 50%; bottom: 30px; transition: all 0.5s; margin-left: -6px;}
+
+/* history_text 공통 영역 */
+#content .content_area .history_tabs{background: url(../images/content3/history_bk.png)1150px 290px no-repeat fixed; width: 1200px; padding: 0 400px; position: relative; left: 50%; margin-left: -1000px; overflow: hidden;}
+#content .content_area .history_tabs .contlist{display: none;}
+#content .content_area .history_tabs dl{overflow: hidden; border-bottom: 1px solid#f8f8f8; padding: 40px}
+#content .content_area .history_tabs dl:last-of-type{border-bottom:none; margin-bottom: 80px;}
+#content .content_area .history_tabs dl dt{font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 2.5em; color: #1979bd; float: left; width: 190px;}
+#content .content_area .history_tabs dl dd{float: right; color: #666; width: 908px; margin-bottom: 32px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1.125em; color: #666;}
+#content .content_area .history_tabs dl dd:last-of-type{margin-bottom: 0;}
+#content .content_area .history_tabs dl dd span{font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 1em; color: #666; margin-right: 24px;}

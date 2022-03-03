@@ -1,0 +1,45 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 인재채용-인사제도 내용*/
+
+/*.content_topic 공통영역*/
+#content .content_topic{font-family: 'Noto Sans KR', sans-serif;}
+#content .content_topic h3{font-weight: 700; font-size: 2.25em; color: #333; margin-bottom: 16px;}
+#content .content_topic p{font-size: 1.25em; color: #666; line-height: 1.5em;}
+#content .area_box{width: 1200px; margin: 0 auto; padding: 120px 0;}
+
+/*content*/
+#content .content_area01 .content_topic{margin-top: 40px; text-align: center;}
+#content .content_area01 .talentdevelopment{margin: 80px 0 120px 0;}
+#content .content_area01 .talentdevelopment ul {font-size: 0; text-indent: -999px; overflow: hidden; opacity: 0;}
+
+#content .content_area02{width: 2000px; position: relative; left: 50%; margin-left: -1000px; background: #f8f8f8;}
+#content .content_area02 .content_topic{margin-bottom: 40px;}
+#content .content_area02 .system_btn{overflow: hidden; margin-bottom: 56px; font-family: 'Noto Sans KR', sans-serif;}
+#content .content_area02 .system_btn li{float: left; margin-right: 16px;}
+#content .content_area02 .system_btn a{display: block; border-radius: 32px; font-weight: 500; padding: 16px 24px; background: #fff; color: #1979bd; border: 1px solid rgba(25, 121, 187, .8); transition: all .5s;}
+#content .content_area02 .system_btn .systemclick{background: #1979bd; color: #fff; border: 1px solid rgba(25, 121, 187, 1); border-radius: 32px;}
+#content .content_area02 .system_text li{position: relative; display: none; height: 83px; font-family: 'Noto Sans KR', sans-serif;}
+#content .content_area02 .system_text li::before{content: ''; width: 1200px; height: 1px; background: rgba(25, 121, 187, .6); position: absolute; top: 70%; left: 0; z-index: 10;}
+#content .content_area02 .system_text p{height: 85px; float: left; font-weight: 500; font-size: 1.25em; color: #333; text-align: center; padding: 16px 0; position: relative;}
+#content .content_area02 .system_text p::before{content: ''; display: block; width: 32px; height: 10px; background: url(../images/content2/mark1.png) 0 0 no-repeat; position: absolute; left: 27%; top: 46%; z-index: 20;}
+#content .content_area02 .system_text li:nth-of-type(1) p{margin-right: 307.5px; font-family: 'Roboto', sans-serif; }
+#content .content_area02 .system_text li:nth-of-type(2) p{margin-right: 308.5px; font-family: 'Roboto', sans-serif;}
+#content .content_area02 .system_text li:nth-of-type(3) p{margin-right: 165px;}
+#content .content_area02 .system_text li:nth-of-type(4) p{margin-right: 165px;}
+#content .content_area02 .system_text li p:last-of-type{margin-right: 0;}
+#content .content_area02 .system_text li p:last-of-type::before{width: 38px; height: 16px; background: url(../images/content2/mark2.png); left: 27%; top: 44%;}
+#content .content_area02 .system_text li p span{display: block; margin-bottom: 32px; font-family: 'Roboto', sans-serif; font-weight: 500; color: #1979bd;}
+
+#content .content_area03 .content_topic{margin: 120px 0 80px 0; text-align: center;}
+#content .content_area03 .benefit_text{overflow: hidden; font-family: 'Noto Sans KR', sans-serif; margin-bottom: 120px; padding-bottom: 56px;}
+#content .content_area03 .benefit_text dl{float: left; margin-right: 32px; width: 298px; height: 288px; padding: 56px 40px;}
+#content .content_area03 .benefit_text dl:first-of-type{background: url(../images/content2/benefit_img1.png);}
+#content .content_area03 .benefit_text dl:nth-of-type(2){background: url(../images/content2/benefit_img2.png);}
+#content .content_area03 .benefit_text dl:last-of-type{background: url(../images/content2/benefit_img3.png); margin-right: 0;}
+#content .content_area03 .benefit_text dl dt{font-weight: 700; font-size: 1.5em; color: #1979bd; margin-bottom: 16px;}
+#content .content_area03 .benefit_text dl dd{font-size: 1.125em; color: #666; line-height: 1.5em; position: relative; margin: 0 0 8px 18px; text-align: justify;}
+#content .content_area03 .benefit_text dl dd::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 100%; position: absolute; left: -16px; top: 12px; background: #999;}
+
+
+
+
+

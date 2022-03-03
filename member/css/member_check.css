@@ -1,0 +1,43 @@
+body{background: #f8f8f8;}
+.logo{display: block; width: 127px; height: 60px; background: url(../images/logo.png) 0 0 no-repeat; background-position: center; text-indent: -999px; overflow: hidden; margin: 50px auto 32px; margin-top: 50px;}
+
+/* content */
+#content{width: 672px; background: #fff; margin: 40px auto; padding: 64px; border-radius: 8px;}
+.join{position: relative;}
+.join h2{font-size: 1.5em; font-weight: 700; margin-bottom: 56px; text-align: center;}
+.join .allcheck{font-size: 1.125em; font-weight: 600; padding: 15.2px 16px; border-bottom: 1px solid #ececec; margin-bottom: 40px; border-radius: 4px; cursor: pointer;}
+.join .allcheck::before {display: inline-block; width: 24px; height: 24px; background-color: transparent; border-radius: 50%; content: ''; background: url(../images/checked_1.png) center center no-repeat; margin: 0px 10px -6px 0px; transition: all .3s;}
+.join .allcheck.afline::before {background: url(../images/checked_2.png) center center no-repeat;}
+
+.join .policy{padding: 10px; overflow-y: scroll; height: 80px; margin: 12px 16px 40px; border: 1px solid #ececec; font-size: 14px; line-height: 1.5em; border-radius: 4px; color: #666;}
+.join .check{margin: 0 16px; font-weight: 500;}
+.join .check .essential{color: #1979bd; font-size: 0.889em;}
+
+.join .button{overflow: hidden; position: relative; text-align: center; margin-top: 56px}
+.button li{float: left; width: 50%;}
+.button a{display: block; padding: 16px 0 17px; border-radius: 4px; border: 1px solid #1979bd; background: #1979bd; font-weight: 700; font-size: 1em; color: #fff; position: relative;}
+.button .ok::before{content: ''; display: block; width: 100%; height: 100%; border-radius: 100%; background:rgba(255,255,255,.15); position: absolute; left: 0; bottom: 0; transition: all .2s; transform: translate(0px, 160%) scale(1.2, 2);}
+.button li:last-child:hover .ok::before{transform: translate(0,0%) scale(1.2,2);}
+.button .cancel{border: 1px solid #1979bd; background: #fff; color: #1979bd; margin-right: 8px;}
+
+/* 체크박스 ui변경 */
+input[type=checkbox] + label::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 50%;
+    content: '';
+    background: url(../images/checked_1.png) center center no-repeat;
+    margin: 0px 10px -6px 0px;
+    transition: all .3s;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + label {
+    cursor: pointer;
+}
+input[type=checkbox]:checked + label::before {
+    background: url(../images/checked_2.png) center center no-repeat;
+}

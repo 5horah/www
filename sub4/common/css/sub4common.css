@@ -1,0 +1,24 @@
+/* sub4 공통 - 비주얼/서브네비/타이틀영역 */
+
+.visual{width: 2000px; position: relative; left: 50%; margin-left: -1000px; top: 0;}
+.visual .visual_text{position: absolute; left: 0; top: 324.75px; width: 100%; text-align: center; color: #fff;}
+.visual .visual_text h3{font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 2.5em; margin-bottom: 16px;}
+.visual .visual_text p{font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.125em;}
+
+.sub_menu{width: 1200px; margin: 0 auto; position: relative; top: -39.4px; margin-bottom: -39.4px;}
+.sub_menu ul{overflow: hidden; width: 100%; margin: 0 auto; box-shadow: 0 0 5px 0 rgb(0 0 0 / 5%);}
+.sub_menu li{float: left; width: 25%;}
+.sub_menu li a{display: block; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 1.25em; padding: 24px 0; background: #fff; border: 1px solid #f8f8f8; color: #333; text-align: center; transition: all .5s;}
+.sub_menu li a:hover{background: #1979bd; color: #fff; border: 1px solid #1979bd; font-weight: 500;}
+.sub_menu .current a{background: #1979bd; color: #fff; border: 1px solid #1979bd; font-weight: 500;}
+
+#content{width: 1200px; margin: 0 auto;}
+#content .title_area{position: relative; padding: 120px 0 127px; text-align: center;}
+#content .title_area::before{content: ''; display: block; width: 1px; height: 70px; background: #999; position: absolute; left: 50%; top: 340px;}
+/* #content .line_map{position: absolute; right: 15px; top: 15px;} */
+#content .line_map{margin-bottom: 16px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; color: #999; position: relative;}
+#content .title_area h2{font-size: 3.125em; margin-bottom: 16px; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; color: #333;}
+#content .title_area p{font-size: 1.5em; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; color: #666;}
+#content .title_area p span{font-family: 'Roboto', sans-serif; font-weight: 500; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; color: #1979bd;}
+
+

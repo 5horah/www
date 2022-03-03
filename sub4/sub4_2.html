@@ -1,0 +1,230 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세스코광장-세스코지식인</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content2.css">
+    <link rel="stylesheet" href="../survey/css/survey.css">
+
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="visual">
+        <img src="./common/images/visual.jpg" alt="서브 비주얼 이미지">
+        <div class="visual_text">
+            <h3>CESCO SQUARE</h3>
+            <p>고객님들의 다양한 후기와 소식을 전달해드립니다.</p>
+        </div>
+    </div>
+
+    <div class="sub_menu">
+        <ul>
+            <li><a href="../concert/list.php">고객리뷰</a></li>
+            <li class="current"><a href="./sub4_2.html">세스코 지식인</a></li>
+            <li><a href="./sub4_3.html">홍보센터</a></li>
+            <li><a href="../greet/list.php">공지사항</a></li>
+        </ul>
+    </div>
+
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map"><i class="fas fa-home"></i><span class="hidden">home</span> &gt; 세스코광장 &gt;
+                <strong>세스코 지식인</strong></div>
+            <h2>세스코 지식인</h2>
+            <p>여러분의 건간한 생활환경을 위한 <span>해충·미생물 정보</span>을 확인해보세요.</p>
+        </div>
+
+        <div class="content_toptopic">
+            <h3>INFORMATION</h3>
+            <p>해충·미생물 피해에 대한 설문조사입니다. 많은 참여 부탁드립니다.</p>
+            <a class="button servey" href="#" target="_blank" title="새창에 열림">설문조사 하러가기</a>
+            <ul>
+                <li><a class="tab tab1" href="#">해충정보</a></li>
+                <li><a class="tab tab2" href="#">미생물정보</a></li>
+            </ul>
+        </div>
+
+        <div class="content_area01 contlist">
+            <div class="content_topic">
+                <h3>PEST INFORMATION</h3>
+                <dl>
+                    <dt class="subtopic">알면 알수록 예방할 수 있습니다.</dt>
+                    <dd class="topic_text">우리의 일상생활 중 언제 어디서든 해충이 유입될 수 있습니다.<br>깨끗한 환경을 위해서는 지속적인 모니터링을 통해 정기관리로 해충재발
+                        예방은 필수입니다.</dd>
+                </dl>
+            </div>
+            <div class="slide_gallery_box">
+                <div class="slide_gallery">
+                    <ul>
+                        <li>
+                            <a class="slide slide1" id="s1" href="javascript:void(0);">
+                                <img src="./images/content2/past_icon1.png" alt="">
+                                <dl>
+                                    <dt>개미류</dt>
+                                    <dd>음식물 오염, 병원균 매개로 천식, 알러지의 원인</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="slide slide2" id="s2" href="javascript:void(0);">
+                                <img src="./images/content2/past_icon2.png" alt="">
+                                <dl>
+                                    <dt>명나방류</dt>
+                                    <dd>생산물의 가공, 저장, 유통 중에 발생, 식량 피해 원인</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="slide slide3" id="s3" href="javascript:void(0);">
+                                <img src="./images/content2/past_icon3.png" alt="">
+                                <dl>
+                                    <dt>바퀴류</dt>
+                                    <dd>여러 전염병을 유발, 천식이나 알러지의 원인</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="slide slide4" id="s4" href="javascript:void(0);">
+                                <img src="./images/content2/past_icon4.png" alt="">
+                                <dl>
+                                    <dt>모기류</dt>
+                                    <dd>흡혈로 뇌염이나 말라리아 등의 전염병을 매개</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="slide slide5" id="s5" href="javascript:void(0);">
+                                <img src="./images/content2/past_icon5.png" alt="">
+                                <dl>
+                                    <dt>파리류</dt>
+                                    <dd>장티푸스, 파리티푸스 등 40여 종의 전염병원균을 보유</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="slide slide6" id="s6" href="javascript:void(0);">
+                                <img src="./images/content2/past_icon6.png" alt="">
+                                <dl>
+                                    <dt>딱정벌레류</dt>
+                                    <dd>생산물의 가공, 저장, 유통 중에 발생하여 식량에 피해</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_menu_box">
+                    <a href="#" class="m1 button"><span class="hidden">이전버튼</span></a>
+                    <a href="#" class="m2 button"><span class="hidden">다음버튼</span></a>
+                </div>
+            </div>
+            <div class="past_table area_table" id="table1"></div>
+        </div>
+        <div class="content_area02 contlist">
+            <div class="area02_bax">
+                <div class="area02_con1">
+                    <div class="content_topic">
+                        <h3>MICROORGANISM INFORMATION</h3>
+                        <dl>
+                            <dt class="subtopic">미생물의 종류와 특성</dt>
+                            <dd class="topic_text">미생물의 제어는 바이러스, 박테리아에 따라 다음과 같이 분류할 수 있습니다.</dd>
+                        </dl>
+
+                    </div>
+                    <ul>
+                        <li>
+                            <h4 class="hidden">01 바이러스</h4>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>01 바이러스</dt>
+                                <dd>살아있는 동물, 식물, 미생물 세포에서만 증식할 수 있는 성분이 간단한 감염성 병원체를 말합니다.</dd>
+                                <dd>증식에 필요한 DNA나RNA로 구성된 유전문질과 단백질로만 이루어져 있어 반드시 숙주에 의존해야만 증식이 가능합니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <p>바이러스에 의한 질병</p>
+                            <div class="virus_table area_table" id="virus_table"></div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4 class="hidden">02 박테리아</h4>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>02 박테리아</dt>
+                                <dd>일반적으로 세균이라 일컬어지며, 대부분의 병원성 균은 박테리아라고 할 수 있습니다.</dd>
+                                <dd>주로 수분, 온도, 영양분, PH 산소에 의존하여 분열에 의해 번식을 하며, 생김새는 구형(구균), 막대모양(간균), 나선형(나선균) 등이 있습니다.
+                                </dd>
+                                <dd>크기는 약 0.2 ~ 1um(1um=10-6M)로 바이러스 다음으로 작은 단세포성 생물입니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <p>박테이라에 의한 질병</p>
+                            <div class="bacteria_table area_table" id="bacteria_table"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="area02_con2">
+                    <div class="content_topic">
+                        <h3>CONTROL</h3>
+                        <dl>
+                            <dt class="subtopic">미생물의 제어</dt>
+                            <dd class="topic_text">미생물의 제어는 범위, 방법에 따라 다음과 같이 분류할 수 있습니다.</dd>
+                        </dl>
+                    </div>
+                    <ul>
+                        <li>
+                            <h4>01 미생물 제어 범위에 따른 분류</h4>
+                        </li>
+                        <li>
+                            <div class="control_table area_table" id="control_table"></div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>02 방법에 따른 분류</h4>
+                        </li>
+                        <li>
+                            <div class="way_table area_table" id="way_table"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/sub4.js"></script>
+    <script src="./js/slide.js"></script>
+    <script src="./pastdata/pastdata.js"></script>
+    <script src="./microorganismdata/microorganismdata.js"></script>
+
+    <!-- 설문조사 팝업 -->
+
+
+        <div class="popup">
+            <? include "../survey/survey.php" ?>
+        </div>
+
+</body>
+
+</html>

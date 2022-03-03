@@ -1,0 +1,66 @@
+/* 레이아웃 공통 */
+#content .content_toptopic{font-family: 'Noto Sans KR', sans-serif; text-align: center; margin-top: 40px;}
+#content .content_toptopic h3{font-weight: 700; font-size: 2.25em; color: #333; margin-bottom: 16px;}
+
+/* 기본 폼 커스텀(row, label, input,textarea,select ) */
+.row{margin-bottom: 24px;}
+.row label{display: block; font-weight: 500; font-size: 1.125em; margin: 0 0 12px 4px;}
+input, textarea, select{width: 100%; height: 56px; border: 1px solid #ececec; border-radius: 4px; background: rgba(255, 255, 255, .5); padding: 12px 16px 13px 16px; box-sizing: border-box; font-size: 1.125em; font-weight: 500;}
+input:focus, select:focus, textarea:focus{outline-color: rgba(25, 121, 189, .5);}
+input::placeholder, textarea::placeholder, select::selection{color: #C1C1C1; font-weight: 300; font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+.disabled_input{background-color: #f8f8f8;}
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active {transition: background-color 5000s ease-in-out 0s;}
+select {background:url(../images/arrow.png) no-repeat 90% 50%; -webkit-appearance: none;-moz-appearance: none;appearance : none;font-family: inherit; color: #333; font-size: 1em; font-weight: 400;}
+select::-ms-expand {display: none;}
+
+/* 버튼 커스텀(btn_wrap, btn_double) */
+.btn_wrap{overflow: hidden; text-align: center; }
+.btn_wrap .btn{display: block; width: -webkit-fill-available; padding: 14px 64px 15px; border-radius: 4px; border: 1px solid #1979bd; box-sizing: border-box; cursor:pointer;
+    font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 1em; text-align: center; overflow: hidden; position: relative;}
+.btn_wrap .btn::before{content: ''; display: block; width: 100%; height: 100%; border-radius: 100%; background:rgba(255,255,255,.15); position: absolute; left: 0; bottom: 0; transition: all .2s; transform: translate(0px, 160%) scale(1.2, 2);}
+.btn_wrap div:hover .btn::before, .btn_wrap li:hover .btn::before{transform: translate(0,0%) scale(1.2,2);}
+.btn_wrap .btn.btn_nomal{background: #fff; color: #1979bd;}
+.btn_wrap .btn.btn_solid{background: #1979bd; color: #fff;}
+.btn_double>div, .btn_double>li{float: left;}
+.btn_double>div:first-child .btn, .btn_double>li:first-child .btn{margin-right: 4px;}
+.right_btn{margin: 0 0 0 auto; width: fit-content;}
+.center_btn{margin: 0 auto; width: fit-content;} 
+
+/* 검색 */
+.search_wrap{padding: 32px 0; border-radius: 4px; margin-bottom: 72px; margin-top: 40px; box-shadow: 0px 4px 13px 0px rgb(82 63 105 / 5%); border: 1px solid #f8f8f8;}
+.search_form{overflow: hidden; position: relative; left: 50%; margin-left: -418px;}
+.search_form>div{float: left;}
+.search_wrap .search_cat{margin-right: 4px; width: 160px;}
+.search_wrap .query{width: 420px;}
+.search_wrap .query input{background: url(../images/search.png)no-repeat 16px center; padding-left: 56px;}
+.search_wrap .btn_wrap{margin-left: 8px;}
+.search_wrap .btn_wrap .btn{padding: 14px 40px 14px;}
+
+/* 게시물 개수 및 설정 */
+.list_info{overflow: hidden;}
+.list_info p{float: left; font-size: 1.125em; color: #666; position: relative; top: 50%; margin-top: 9px;}
+.list_info p span{font-weight: 700; font-size: 1.25em; color: #1979cd;}
+.list_info .list_size{width: 140px; float: right; font-size: 1em;}
+
+/* 게시물 테이블 */
+.table_wrap{width: 100%; margin-top: 12px; text-align: center;}
+.thead{background-color: #f8f8f8; font-size: 1.125em; color: #333; border-top: 2px solid #ececec; border-bottom: 2px solid #ececec; overflow: hidden; padding: 20px 0; box-sizing: border-box;}
+.thead li{font-weight: 400; float: left;}
+.th1,.tr1,.th6,.tr6{width: 5%;}
+.th2,.tr2,.th5,.tr5{width: 15%;}
+.th3,.tr3{width: 50%;}
+.th3, .tr3{text-align: left;}
+.tbody{font-size: 1.125em; color: #666;}
+.tr_wrap{background: rgba(25, 121, 189, 0); overflow: hidden; padding: 20px 0; border-top: 2px solid #f8f8f8; border-bottom: 2px solid #f8f8f8;}
+.tr_wrap>div{float: left;}
+.tr_wrap:hover{background: rgba(25, 121, 189, .1);}
+.tr_wrap:hover .tr3{text-decoration: underline;}
+.tr3{color: #333;}
+
+/* 하단 버튼(목록/글쓰기버튼 및 페이지 버튼) */
+.page_button{margin: 18px 0 120px;}
+.page_num{text-align: center;}
+.page_num i{color: #999; margin: 0 16px;}
+.page_num b{display: inline-block; width: 40px; height: 40px; font-size: 1.125em; color: #fff; position: relative; margin: 0 4px;}
+.page_num b::before{content: ''; display: block; width: 40px; height: 40px; background: rgba(25, 121, 189, 1); border-radius: 5-px; position: absolute; left: 50%; top: 50%; margin: -25px 0 0 -20px; z-index: -10;}
+.page_button .btn_wrap .btn{padding: 14px 40px 15px;}

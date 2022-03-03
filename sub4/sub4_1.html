@@ -1,0 +1,56 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세스코광장-고객리뷰</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content1.css">
+
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="visual">
+        <img src="./common/images/visual.jpg" alt="서브 비주얼 이미지">
+        <div class="visual_text">
+            <h3>CESCO SQUARE</h3>
+            <p>고객님들의 다양한 후기와 소식을 전달해드립니다.</p>
+        </div>
+    </div>
+
+    <div class="sub_menu">
+        <ul>
+            <li class="current"><a href="./sub4_1.html">고객리뷰</a></li>
+            <li><a href="./sub4_2.html">세스코 지식인</a></li>
+            <li><a href="./sub4_3.html">홍보센터</a></li>
+            <li><a href="../greet/list.php">공지사항</a></li>
+        </ul>
+    </div>
+
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map"><i class="fas fa-home"></i><span class="hidden">home</span> &gt; 세스코광장 &gt; <strong>고객리뷰</strong></div>
+            <h2>고객리뷰</h2>
+            <p>문구</p>
+        </div>
+        <div class="content_toptopic">
+            <p>고객리뷰</p>
+        </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <!-- <script src="./js/sub4.js"></script> -->
+</body>
+</html>

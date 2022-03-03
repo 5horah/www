@@ -1,0 +1,151 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용-인사제도</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content2.css">
+
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="visual">
+        <img src="./common/images/visual.jpg" alt="서브 비주얼 이미지">
+        <div class="visual_text">
+            <h3>TALENT RECRUITMENT</h3>
+            <p>세스코와 미래를 함께 열어 갈 여러분을 기다립니다.</p>
+        </div>
+    </div>
+    <div class="sub_menu">
+        <ul>
+            <li><a href="./sub5_1.html">인재상</a></li>
+            <li class="current"><a href="./sub5_2.html">인사제도</a></li>
+            <li><a href="./sub5_3.html">채용가이드</a></li>
+        </ul>
+    </div>
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map"><i class="fas fa-home"></i><span class="hidden">home</span> &gt; 인재채용 &gt; <strong>인사제도</strong></div>
+            <h2>인사제도</h2>
+            <p><span>합리적이고 공정한</span> 인사제도와 정책을 수립하고 있습니다.</p>
+        </div>
+        <div class="content_area01">
+            <div class="content_topic">
+                <h3>인재육성</h3>
+                <p>세스코는 인재육성을 통하여 가치를 최대화하며<br>리더쉽과 전문성을 갖춘 인재로 성장하도록 다양한 교육을 제공하고 있습니다.</p>
+            </div>
+            <div class="talentdevelopment">
+                <object data="./images/content2/development.svg" type="image/svg+xml"></object>
+                <ul>
+                    <li>
+                        인재<span>(PERSON)</span>
+                    </li>
+                    <li>
+                        평가<span>(EVALUATION)</span>
+                    </li>
+                    <li>
+                        보상관리<span>(REWARD&MANAGMENT)</span>
+                    </li>
+                    <li>
+                        일<span>(JOB)</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>다양성을 존중하는 열린 채용</li>
+                    <li>미래를 선도하는 전문가 배출</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_area02">
+            <div class="area_box">
+                <div class="content_topic">
+                    <h3>승진제도</h3>
+                    <p>세스코에서는 성과와 역량을 기반으로 한 성과주의 인사제도를 운영하고 있습니다.</p>
+                </div>
+                <ul class="system_btn">
+                    <li><a href="#"># 전문영업직</a></li>
+                    <li><a href="#"># 토탈위생컨설턴트(SC)</a></li>
+                    <li><a href="#"># 연구직</a></li>
+                    <li><a href="#"># 관리사무직</a></li>
+                </ul>
+        
+                <ul class="system_text">
+                    <li>
+                        <h4 class="hidden">전문영업직</h4>
+                        <p><span>step01</span>SPECIAL</p>
+                        <p><span>step02</span>EXPERT</p>
+                        <p><span>step03</span>PRIME</p>
+                        <p><span>step04</span>TOP</p>
+                    </li>
+                    <li>
+                        <h4 class="hidden">토탈위생컨설턴트(SC)</h4>
+                        <p><span>step01</span>FIRST</p>
+                        <p><span>step02</span>PRIOR</p>
+                        <p><span>step03</span>SENIOR</p>
+                        <p><span>step04</span>MASTER</p>
+                    </li>
+                    <li>
+                        <h4 class="hidden">연구직</h4>
+                        <p><span>step01</span>연구원</p>
+                        <p><span>step02</span>주임</p>
+                        <p><span>step03</span>전임</p>
+                        <p><span>step04</span>선임</p>
+                        <p><span>step05</span>책임</p>
+                        <p><span>step06</span>수석</p>
+                    </li>
+                    <li>
+                        <h4 class="hidden">관리사무직</h4>
+                        <p><span>step01</span>사원</p>
+                        <p><span>step02</span>주임</p>
+                        <p><span>step03</span>대리</p>
+                        <p><span>step04</span>과장</p>
+                        <p><span>step05</span>차장</p>
+                        <p><span>step06</span>부장</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_area03">
+            <div class="content_topic">
+                <h3>보상제도</h3>
+                <p>세스코는 직원의 안정적인 생활 기반을 보장하고,<br>행복을 추구할 수 있도록 다양한 보상제도를 실행하고 있습니다.</p>
+            </div>
+            <div class="benefit_text">
+                <dl>
+                    <dt>업무지원</dt>
+                    <dd>출, 퇴근 및 근무차량지원<br>(유류비포함)</dd>
+                    <dd>장기근속 및 우수사원 표창</dd>
+                    <dd>유니폼 및 휴대폰 지급</dd>
+                </dl>
+                <dl>
+                    <dt>생활지원</dt>
+                    <dd>4대 보험 가입<br>(국민연금,건강보험 등)</dd>
+                    <dd>자녀학자금지원, 출산지원금, 돌 축하금, 자녀보육료 지원</dd>
+                </dl>
+                <dl>
+                    <dt>기타지원</dt>
+                    <dd>연차 및 연차수당, 퇴직연금제도가입</dd>
+                    <dd>기념품 지급 : 창립기념일, 추석, 설 등 (년 4회 이상)</dd>
+                    <dd>경조금 지원<br>(경조사금, 경조휴가 제공)</dd>
+                </dl>
+            </div>
+        </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/sub5.js"></script>
+</body>
+</html>
