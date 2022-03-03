@@ -1,0 +1,48 @@
+/*컨텐츠 영역*/
+.content_area1 ul{padding: 30px 20px 50px 20px; text-align: left;}
+.content_area1 li{height: auto; border-bottom: 2px solid rgba(25, 121, 187, .5); background: #fff; box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 5%); margin-bottom: 16px;}
+.content_area1 li img{width: 45px; margin: 24px 16px 16px; float: left;}
+.content_area1 li p{margin: 0 16px 24px; font-weight: 400; font-size: 1.143rem; color: #666; clear: both;}
+.content_area1 li p span{display: block; font-weight: 700; font-size: 1.286rem; color:#1979bd; margin-bottom: 8px;}
+
+.content_area2{background-image: url(../../images/sub3/area2_bk.png); background-position: center; background-repeat: no-repeat; background-size: cover;}
+#content>.content_area2>h3, #content>.content_area2>p{color: #fff;}
+.content_area2 ul{padding: 24px 20px 50px; overflow: hidden;}
+.content_area2 ul li{float: left; width: 49%; height: 183px; border-radius: 8px; border: 1px solid #fff; box-sizing: border-box;}
+.content_area2 ul li:nth-child(1),.content_area2 ul li:nth-child(3){margin-right: 2%;}
+.content_area2 ul li:nth-of-type(1),.content_area2 ul li:nth-of-type(2){margin-bottom: 2%;}
+.content_area2 ul li img{margin-top: 16px;}
+.content_area2 ul li p{color: #f8f8f8; padding: 0 10px 16px; text-align: justify;}
+.content_area2 ul li p span{display: block; color:#fff; font-family: 'Roboto', sans-serif; margin: 8px 0 4px; font-weight: 700; text-align: center;}
+
+.content_area3>ul{overflow: hidden; padding: 20px 20px 0 20px; text-align: center; position: relative;}
+.content_area3>ul::before{content: ''; display: block; width: 100%; height: 1px; background: #ececec; position: absolute; bottom: 0; left: 0;}
+.content_area3>ul li{float: left; width: 50%;}
+.content_area3>ul li a{display: block; position: relative; font-size: 1.071rem; color:#666; opacity: .6; padding-bottom: 12px;}
+.content_area3>ul li a.click{font-weight: 700; color:#1979bd; opacity: 1;}
+.content_area3>ul li a.click::before{content: ''; display: block; width: 100%; height: 2px; background: #1979bd; position: absolute; bottom: 0; left: 0;}
+
+.content_area3 .conlist{padding-top: 50px}
+.content_area3 .conlist .topic{font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 1.571rem;}
+.content_area3 .conlist .topic span{color: #1979bd;}
+.content_area3 .conlist .topictxt{font-weight: 400; font-size: 1.143rem; color: #666; padding: 0 20px;}
+.content_area3 .conlist .topictxt span{font-weight: 500; color: #1979bd;}
+
+.content_area3 .conlist_area1 ul{padding: 24px 20px 34px;}
+.content_area3 .conlist_area1 ul li{overflow: hidden; box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 5%); border-radius: 16px; padding: 24px; margin-bottom: 16px;}
+.content_area3 .conlist_area1 ul li img{float: left; width: 50px;}
+.content_area3 .conlist_area1 ul li p{margin-left: 74px; font-weight: 400; font-size: 1.143rem; color: #666; text-align: justify;}
+.content_area3 .conlist_area1 ul li p span{display: block; font-weight: 700; font-size: 1.286rem; color: #1979bd; margin-bottom: 4px;}
+
+.content_area3 .conlist_area2 img, .content_area3 .conlist_area3 img{width: 100%;}
+.content_area3 .conlist_area2 .topic, .content_area3 .conlist_area3 .topic{font-family: 'Noto Sans KR', sans-serif; margin-bottom: 10px; font-weight: 700; font-size: 1.429rem; padding-top: 50px;}
+.content_area3 .conlist_area2{background: #f8f8f8;}
+.content_area3 .conlist_area2 .topictxt, .content_area3 .conlist_area3 .topictxt{margin-bottom: 24px;}
+.content_area3 .conlist_area2 a,.content_area3 .conlist_area3 a{display: inline-block; color: #1979bd; border: 1px solid rgba(25, 121, 187, .8); border-radius: 100px; font-weight: 500; font-size: 0.929rem; padding: 14px 16px; margin-bottom: 24px;}
+.content_area3 .conlist_area3{margin-bottom: 50px;}
+
+/*팝업*/
+#content .popup img{width: 86%; margin:20px 3%;}
+#content .modal_box2{position: fixed; left: 0; top: 0; z-index: 110; width: 100%; height: 100%; background: #000; opacity: .7; display:none;} 
+#content  .popup{position: fixed; top: 20%; left: 50%; margin: 0 0 0 -35%; width: 70%; height: auto; background: #fff; box-shadow: 1px 3px 7px 0px #666; border-radius: 4px; z-index: 120; display:none;}
+#content .popup .close_btn{position: absolute; top: 0; right: -32px; display: block; overflow: hidden; color: #fff; font-size: 2em;}

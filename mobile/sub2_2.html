@@ -1,0 +1,463 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name = "format-detection" content = "telephone=no">
+
+<title>서비스경영-세스코서비스</title>
+
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+<link rel="stylesheet" href="./css/sub/sub_common.css">
+<link rel="stylesheet" href="./css/sub/sub2_2.css">
+
+<script src="js/prefixfree.min.js"></script>
+
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea">
+            <!-- 아래있는 header_top한테 overflow -->
+            <div class="header_top">
+                <h1><a href="index.html">세스코 로고</a></h1>
+                <a class="menu_open" href="#"><span>햄버거 메뉴</span></a>
+            </div>
+            <div class="modal_box"></div>   
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션영역</h2>
+                <h3><a href="index.html">세스코 로고</a></h3>
+                <ul class="login">
+                    <?
+                        if(!$userid){ //로그아웃(세션변수X)
+                    ?>
+                    <li><h3><a href="./member/member_check.html">회원가입</a></h3></li>
+                    <li><h3><a href="./login/login_form.php">로그인</a></h3></li>
+                    <?
+                        }else{ //로그인(세션변수O)
+                    ?>
+                    <li class="login_af">
+                        <i class="fas fa-user-circle"></i><span class="hidden">사용자 프로필</span>
+                        <h3><a href="./member/member_form_modify.php"><strong><?=$usernick?></strong>님 <span class="hidden">마이페이지</span><i class="fas fa-cog"></i></a></h3>
+                    </li>
+                    <li class="login_af"><h3><a href="./login/logout.php">로그아웃</a></h3></li>
+                    <?
+                        }
+                    ?>
+                </ul>
+                <ul class="mainMenu">
+                    <li class="depth1"><h3><a href="#">기업소개 <span>About Cesco</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub1_1.html">기업정보</a></li>
+                            <li><a href="sub1_2.html">연혁</a></li>
+                            <li><a href="sub1_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">서비스경영 <span>Management</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub2_1.html">세스코솔루션</a></li>
+                            <li><a href="sub2_2.html">세스코서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">기업경쟁력 <span>competitivity</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub3_1.html">세스코경쟁력</a></li>
+                            <li><a href="sub3_2.html">세스코멤버스</a></li>
+                            <li><a href="sub3_3.html">시험분석</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1 last"><h3><a href="#">고객센터 <span>Center</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub4_1.html">자주묻는질문</a></li>
+                            <li><a href="sub4_2.html">AS서비스안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="visual ServiceMenagment">
+            <div class="visual_text">
+                <h3>SERVICE MENAGMENT</h3>
+                <p>여러분의 고민 CESCO가 해결해드립니다.</p>
+            </div>
+        </div>
+        <div class="sub_menu ServiceMenagment_menu">
+            <ul>
+                <li><a href="./sub2_1.html">세스코솔루션</a></li>
+                <li class="current"><a href="./sub2_2.html">세스코서비스</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <h2>세스코서비스</h2>    
+            <div class="content_area1">
+                <h3>SERVICE</h3>
+                <ul class="tab_menu">
+                    <li><a class="tab tab1" href="#">비래해충</a></li>
+                    <li><a class="tab" href="#">향균·공기</a></li>
+                    <li><a class="tab" href="#">수질안심</a></li>
+                </ul>
+                <div class="tab_content">
+                    <div class="conlist">
+                        <h3 class="hidden">비래해충</h3>
+                        <div>
+                            <p>
+                                <span>1년 내내, 41년 노하우를<br>경험할 수 있습니다.</span>
+                                파리, 나방, 모기 등의 날아다니는 비래해충을 24시간 동안 제어하여, 깨끗하고 위생적인 공간을 약속드립니다.
+                            </p>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <p><span>전용램프</span>세스코 IPM 기술연구소의 다양한 실험을 통해 개발한 세스코 전용 램프를 사용하여 강력한 포획력을 자랑합니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p><span>카트리지</span>자적제품 기술로 제작되어 우수한 접착력과 내구성으로 뛰어난 해충 포획력을 지니고 있습니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p><span>안정기</span>해충특성을 과학적으로 분석하여 개발한 안정기를 사용하여 비래해충을 가장 잘 유인합니다.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                <span>CESCO FIC System<br>장비들이 다른 이유</span>
+                                반감기 테스트에서 세스코의 장비는 타사 장비보다 빠른 시간 내에 포획하는 결과와 기술력을 바탕으로 최고를 자랑합니다.
+                            </p>
+                            <img src="./images/sub2/conlist4_img4.png" alt="CESCO FIC System 장비들이 다른 이유 관련 이미지">
+                        </div>
+                        <div>
+                            <p>
+                                <span>비래해충 서비스</span>
+                                전문가 관리와 첨단 시스템 케어 맞춤구성 서비스로 3단계 디펜스 라인을 구축하여 비래해충의 실내유입을 차단합니다.
+                            </p>
+                            <div class="swiper mySwiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist4_pro1.png" alt="피닉스 제품이미지">
+                                        <dl>
+                                            <dt>피닉스<span>PHOENIX</span></dt>
+                                            <dd>국내 최고 포획력으로 실내로 침입 및 발생한 해충을 제어하는 피닉스</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist4_pro2.png" alt="썬더블루 제품이미지">
+                                        <dl>
+                                            <dt>썬더블루<span>THUNDERBLUE</span></dt>
+                                            <dd>실내로 칩입할 수 있는 해충을 최외곽에서 1차로 차단하는 썬더블루</dd>
+                                        </dl>                        
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist4_pro3.png" alt="블루스톰 제품이미지">
+                                        <dl>
+                                            <dt>블루스톰<span>BLUESTOTM</span></dt>
+                                            <dd>실내로 침입할 수 있는 해충을 건물경계에서 2차로 차단하는 블루스톰</dd>
+                                        </dl>                        
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist4_pro4.png" alt="인셉터 제품이미지">
+                                        <dl>
+                                            <dt>인셉터<span>INCEPTER</span></dt>
+                                            <dd>실내 다양한 공간에서 침입 및 발생한 해충을 제어하는 인셉터</dd>
+                                        </dl>                        
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conlist">
+                        <h3 class="hidden">향균·공기</h3>
+                        <div>
+                            <p>
+                                <span>오염 발생 구역은 예방으로<br>관리 할 수 있습니다.</span>
+                                호흡기와 손을 통해 감염되는 바이러스·박테리아 질환을 효과적으로 예방할 수 있는 안심 솔루션으로서 탈취, 유해세균 및 바이러스 제거로 쾌적한 환경을 지켜드립니다.
+                            </p>
+                            <ul>
+                                <li>
+                                    <img src="./images/sub2/conlist5_icon1.png" alt="강력한 항균력 아이콘">
+                                    <p><span>강력한 항균력</span>서식하는 유해세균 99% 이상 살균력</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist5_icon2.png" alt="뛰어난 안전성 아이콘">
+                                    <p><span>뛰어난 안전성</span>환경유해물질 등으로 안전성 확인</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist5_icon3.png" alt="고성능 디스펜서 아이콘">
+                                    <p><span>고성능 디스펜서</span>에어제닉 분사량 9단계 조절 가능</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist5_icon4.png" alt="우수한 디자인 아이콘">
+                                    <p><span>우수한 디자인</span>2012년 지식경제부 굿디자인 선정</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                <span>향균·공기 안전 전문가와<br>세스코 과학으로 관리합니다.</span>
+                                방제가 힘든 치명적인 세균들이기에 불특정 다수를 상대하는 영업장과 건물에서는 과학적이고, 체계적인 방법이 필요합니다.
+                            </p>
+                            <img src="./images/sub2/conlist5_img1.png" alt="향균·공기 안전 전문가 관련 이미지">
+                        </div>
+                        <div>
+                            <p>
+                                <span>세스코 향균·공기 안전 서비스</span>
+                                바이러스와 박테리아에 대처하는 세스코만의 가장 과학적이고 체계적인 제품으로 효과적이고 위생적으로 관리하세요.
+                            </p>
+                            <div class="swiper mySwiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist6_img1.png" alt="핸드제닉 제품이미지">
+                                        <dl>
+                                            <dt><span>손세정기(자동)</span>핸드제닉</dt>
+                                            <dd>손을 통한 바이러스 질환으로부터 안심할 수 있는 핸드제닉, 새니제닉, 핸드클린</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist6_img2.png" alt="변기세정기 제품이미지">
+                                        <dl>
+                                            <dt><span>변기세정기</span>프레쉬제닉</dt>
+                                            <dd>독자적 기술로 인정받은 기술력으로 쾌적한 화장실을 책임지는 프레쉬제닉</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist6_img3.png" alt="자동방향탈취제 제품이미지">
+                                        <dl>
+                                            <dt><span>자동방향탈취제</span>에어제닉</dt>
+                                            <dd>쾌적함은 물론, 방향 및 탈취 작용으로 공기까지 책임지는 에어제닉</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist6_img4.png" alt="공기청정기 제품이미지">
+                                        <dl>
+                                            <dt><span>공기청정기</span>라돈 룸케어 공기청정기</dt>
+                                            <dd>세계최초 라돈 방사능 센서 적용 공기청정기</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist6_img5.png" alt="공기살균기 제품이미지">
+                                        <dl>
+                                            <dt><span>공기살균기</span>UV파워 공기살균기</dt>
+                                            <dd>탁월한 안전성 효과적인 살균케어 UV파워 공기살균기</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist6_img6.png" alt="공기살균기 제품이미지">
+                                        <dl>
+                                            <dt><span>공기살균기</span>공기살균기 Max power</dt>
+                                            <dd>초대형 바이러스 선제공격 시스템 UV파워공기살균기</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conlist">
+                        <h3 class="hidden">수질안심</h3>
+                        <div>
+                            <p>
+                                <span>Why CESCO Water?</span>
+                                세스코만의 과학을 더욱 안전하고, 안심할 수 있는 물을 제공하는 것이 세스코 워터 안심관리 서비스의 시작 이유입니다.
+                            </p>
+                            <ul>
+                                <li>
+                                    <p><span>01</span>필요하고 편리한 기능으로 생활의 가치 향상</p>
+                                    <img src="./images/sub2/conlist7_icon1.png" alt="생활의 가치 향상 아이콘">
+                                </li>
+                                <li>
+                                    <p><span>02</span>유입부터 출수까지 세스코 과학 수질관리</p>
+                                    <img src="./images/sub2/conlist7_icon2.png" alt="과학 수질관리 아이콘">
+                                </li>
+                                <li>
+                                    <p><span>03</span>차별화된 솔루션으로 물을 만드는 기술</p>
+                                    <img src="./images/sub2/conlist7_icon3.png" alt="기술 아이콘">
+                                </li>
+                                <li>
+                                    <p><span>04</span>세련된 디자인으로 다양한 장소에 설치 가능</p>
+                                    <img src="./images/sub2/conlist7_icon4.png" alt="세련된 디자인 아이콘">
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                <span>매일 먹고 마시는 물,<br>과학적인 세스코 워터로 시작</span>
+                                먹는물 뿐만 아니라 조리하는 물까지도 안전한 물을 공급하겠다는 사명감으로 수질 안심 관리 솔루션을 만들어 갑니다.
+                            </p>
+                            <img src="./images/sub2/conlist8_img1.png" alt="매일 먹고 마시는 물, 과학적인 세스코 워터로 시작 관련 이미지">
+                        </div>
+                        <div>
+                            <p>
+                                <span>수질안심 서비스</span>
+                                라이프 스타일에 맞게 다양하고 세련된 컬러를 선택해 보세요.
+                            </p>
+                            <div class="swiper mySwiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist9_pro1.png" alt="퓨어 화이트 정수기 이미지">
+                                        <dl>
+                                            <dt>퓨어 화이트<span>Pure White is Simple</span></dt>
+                                            <dd>#Simple 소박한</dd>
+                                            <dd>#Honest 솔직한</dd>
+                                            <dd>#Pure 순수한</dd>
+                                        </dl>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist9_pro2.png" alt="메탈릭 실버 정수기 이미지">
+                                        <dl>
+                                            <dt>메탈릭 실버<span>Metalic Silver is Smart</span></dt>
+                                            <dd>#Simple 영리한</dd>
+                                            <dd>#Confident 자신감 있는</dd>
+                                            <dd>#Firm 확고한</dd>
+                                        </dl>                      
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist9_pro3.png" alt="차콜 그레이 정수기 이미지">
+                                        <dl>
+                                            <dt>차콜 그레이<span>Charcoal Gray is Classic</span></dt>
+                                            <dd>#Classic 최고 수준의</dd>
+                                            <dd>#Luxurious 고급스러운</dd>
+                                            <dd>#Grand 당당한</dd>
+                                        </dl>                
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist9_pro4.png" alt="인디고 블루 정수기 이미지">
+                                        <dl>
+                                            <dt>인디고 블루<span>Indigo Blue is Urban</span></dt>
+                                            <dd>#Urban 도시적인</dd>
+                                            <dd>#Successful 성공적인</dd>
+                                            <dd>#Reliable 믿을만한</dd>
+                                        </dl>                
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist9_pro5.png" alt="크림 아이보리 정수기 이미지">
+                                        <dl>
+                                            <dt>크림 아이보리<span>Cream Ivory is Friendly</span></dt>
+                                            <dd>#Friendly 친절한</dd>
+                                            <dd>#Harmonious 조화로운</dd>
+                                            <dd>#Thoughtful 배려심 있는</dd>
+                                        </dl>                
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist9_pro6.png" alt="세이지 그린 정수기 이미지">
+                                        <dl>
+                                            <dt>세이지 그린<span>Sage Green is Calm</span></dt>
+                                            <dd>#Calm 차분한</dd>
+                                            <dd>#Sophisticated 세련된</dd>
+                                            <dd>#Comfortable 편안한</dd>
+                                        </dl>                
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist9_pro7.png" alt="아쿠아 민트 정수기 이미지">
+                                        <dl>
+                                            <dt>아쿠아 민트<span>Aqua Mint is Trendy</span></dt>
+                                            <dd>#Trendy 최신 유행의</dd>
+                                            <dd>#Positive 긍정적인</dd>
+                                            <dd>#Sensible 센스있는</dd>
+                                        </dl>                
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="./images/sub2/conlist9_pro8.png" alt="베이비 핑크 정수기 이미지">
+                                        <dl>
+                                            <dt>베이비 핑크<span>Baby Pink is Lovely</span></dt>
+                                            <dd>#Lovely 사랑스러운</dd>
+                                            <dd>#Pretty 매력적인</dd>
+                                            <dd>#Vibrant 활기찬</dd>
+                                        </dl>                
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer id="footerArea">
+            <div class="footer_inner">
+                <a class="topMove" href="#"><span class="hidden">top</span><i class="fas fa-chevron-up"></i></a> 
+                <div class="footer_top">
+                    <ul class="terms">
+                        <li>
+                            <a href="#a">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#a">전자금융거래이용약관</a>
+                        </li>
+                    </ul>
+                    <div class="footer_family">
+                        <a class="arrow" href="#">FAMILY SITE<i class="fas fa-chevron-down"></i><span class="hidden">sort-down</span></a>
+                        <ul class="family_list">
+                            <li><a href="https://www.cescofood.co.kr/CescoFs/" target="_blank" title="새창에 열림">세스코 식품안전</a></li>
+                            <li><a href="https://mall.cesco.co.kr/Shop/Main/" target="_blank" title="새창에 열림">세스코 쇼핑몰</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <address>
+                        <span>(주)세스코</span>
+                        대표이사 : 사장 정찬혁 | 고객센터 : 1588-1119<br>주소 : 서울시 강동구 상일로 10길 46 세스코 터치센터<br>(평일 08:30 ~ 18:00  토요일 08:30 ~ 15:00)
+                        <span>COPYRIGHT 2021 CESCO.ALL RIGHTS RESERVEL</span>
+                    </address>
+                    <div class="footer_bottom">
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCLlmPgLTZIegLvxx2buhznw" target="_blank" title="새창에 열림">
+                                    <span class="hidden" >유튜브</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ko-kr.facebook.com/CESCO15881119" target="_blank" title="새창에 열림">
+                                    <span class="hidden">페이스북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cesco_kr/" target="_blank" title="새창에 열림">
+                                    <span class="hidden">인스타</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+ 
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/sub/tab.js"></script>
+<script src="js/sub/sub2_2.js"></script>
+ 
+</body>
+</html>

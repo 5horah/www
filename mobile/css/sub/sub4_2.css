@@ -1,0 +1,40 @@
+/*컨텐츠 영역*/
+.content_area1>ul{overflow: hidden; padding: 20px 20px 0 20px; text-align: center; position: relative;}
+.content_area1>ul::before{content: ''; display: block; width: 100%; height: 1px; background: #ececec; position: absolute; bottom: 0; left: 0;}
+.content_area1>ul li{float: left; width: 35%;}
+.content_area1>ul li:first-child{width: 30%;}
+.content_area1>ul li a{display: block; position: relative; font-size: 1.071rem; color:#666; opacity: .6; padding-bottom: 12px;}
+.content_area1>ul li a.click{font-weight: 700; color:#1979bd; opacity: 1;}
+.content_area1>ul li a.click::before{content: ''; display: block; width: 100%; height: 2px; background: #1979bd; position: absolute; bottom: 0; left: 0;}
+
+.conlist{text-align: left; margin: 0 20px 50px;}
+.conlist h4{font-weight: 700; font-size: 1.429rem; color: #333; margin: 50px 0 24px; text-align: center;}
+.conlist .subtopic{font-weight: 700; font-size: 1.286rem; color: #1979bd; margin-bottom: 18px;}
+.conlist dl{margin-bottom: 16px;}
+.conlist dl dt{font-weight: 500; font-size: 1.143rem; margin: 0 0 8px 16px; position: relative;}
+.conlist dl dt::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 100%; position: absolute; left: -16px; top: 12px; background: #999;}
+.conlist dl dd{line-height: 1.5em; color: #666; margin-left: 16px; text-align: justify;}
+.conlist table{margin: 18px 0 4px 0; box-sizing: border-box;}
+.conlist table tr{border-bottom: 1px solid #ececec; margin: 0 auto;}
+.conlist table thead th{padding: 8px 0; line-height: 1.5em;  color: #fff; background: rgba(25,121,187,.8); font-weight: 500; text-align: center;}
+.conlist table thead .table_rightborder{border-right: 1px solid #ececec;}
+.conlist table tbody tr th{font-weight: 400; line-height: 1.5em;  padding: 8px; border-right: 1px solid #ececec; width: 17%;}
+.conlist table tbody tr td{font-weight: 300; line-height: 1.5em;  padding: 8px; border-right: 1px solid #ececec;}
+.conlist table tbody tr td:last-of-type{border-right: none;}
+.conlist .lastp{font-size: 0.857rem; color: #666;}
+
+.conlist>ol{margin-bottom: 50px; text-align: justify;}
+.conlist>ol>li{line-height: 1.5em; color: #666; margin: 0 0 16px 16px; position: relative; line-height: 1.5em;}
+.conlist>ol>li::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 100%; position: absolute; left: -16px; top: 12px; background: #999;}
+.conlist>ol>li ol{margin: 8px 0 0 16px;}
+.conlist>ol>li:last-child ol li{margin: 4px 0 0 16px; position: relative;}
+.conlist>ol>li:last-child ol li::before{content: '-'; display: block; font-weight: 700; position: absolute; left: -16px; top: 0; color: #666;}
+.conlist:last-of-type p{line-height: 1.5em; color: #666; margin: 0 0 50px 0;}
+.conlist>ul{overflow: hidden;  width: 100%; padding: 16px 0; border: 1px solid #f8f8f8; margin-bottom: 16px;}
+.conlist>ul li{float: left; width: 33.33%; text-align: center; position: relative;}
+.conlist>ul li:nth-child(1)::before{content: ''; display: block; width: 20px; height: 20px; background: url(../../images/sub4/pluse_icon.png)no-repeat; position: absolute; top: 25%; left: 90%;}
+.conlist>ul li:nth-child(2)::before{content: ''; display: block; width: 20px; height: 20px; background: url(../../images/sub4/pluse_icon.png)no-repeat; position: absolute; top: 25%; left: 90%;}
+.conlist>ul li span{display: block; margin-top: 8px; font-weight: 500; color: #666;}
+
+
+

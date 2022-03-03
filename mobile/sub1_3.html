@@ -1,0 +1,222 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name = "format-detection" content = "telephone=no">
+
+<title>기업소개-오시는길</title>
+
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+<link rel="stylesheet" href="./css/sub/sub_common.css">
+<link rel="stylesheet" href="./css/sub/sub1_3.css">
+
+
+<script src="js/prefixfree.min.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4a8263c4adf6badf64fb4b969862f023"></script>
+<script src="js/map.js"></script>
+
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea">
+            <!-- 아래있는 header_top한테 overflow -->
+            <div class="header_top">
+                <h1><a href="index.html">세스코 로고</a></h1>
+                <a class="menu_open" href="#"><span>햄버거 메뉴</span></a>
+            </div>
+            <div class="modal_box"></div>   
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션영역</h2>
+                <h3><a href="index.html">세스코 로고</a></h3>
+                <ul class="login">
+                    <?
+                        if(!$userid){ //로그아웃(세션변수X)
+                    ?>
+                    <li><h3><a href="./member/member_check.html">회원가입</a></h3></li>
+                    <li><h3><a href="./login/login_form.php">로그인</a></h3></li>
+                    <?
+                        }else{ //로그인(세션변수O)
+                    ?>
+                    <li class="login_af">
+                        <i class="fas fa-user-circle"></i><span class="hidden">사용자 프로필</span>
+                        <h3><a href="./member/member_form_modify.php"><strong><?=$usernick?></strong>님 <span class="hidden">마이페이지</span><i class="fas fa-cog"></i></a></h3>
+                    </li>
+                    <li class="login_af"><h3><a href="./login/logout.php">로그아웃</a></h3></li>
+                    <?
+                        }
+                    ?>
+                </ul>
+                <ul class="mainMenu">
+                    <li class="depth1"><h3><a href="#">기업소개 <span>About Cesco</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub1_1.html">기업정보</a></li>
+                            <li><a href="sub1_2.html">연혁</a></li>
+                            <li><a href="sub1_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">서비스경영 <span>Management</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub2_1.html">세스코솔루션</a></li>
+                            <li><a href="sub2_2.html">세스코서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">기업경쟁력 <span>competitivity</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub3_1.html">세스코경쟁력</a></li>
+                            <li><a href="sub3_2.html">세스코멤버스</a></li>
+                            <li><a href="sub3_3.html">시험분석</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1 last"><h3><a href="#">고객센터 <span>Center</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub4_1.html">자주묻는질문</a></li>
+                            <li><a href="sub4_2.html">AS서비스안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="visual AboutCesco">
+            <div class="visual_text">
+                <h3>ABOUT CESCO</h3>
+                <p>깨끗한 환경으로 건강한 내일을 약속드립니다.</p>
+            </div>
+        </div>
+        <div class="sub_menu AboutCesco_menu">
+            <ul>
+                <li><a href="./sub1_1.html">기업정보</a></li>
+                <li><a href="./sub1_2.html">연혁</a></li>
+                <li class="current"><a href="./sub1_3.html">오시는길</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <h2>오시는길</h2>    
+            <div class="content_area1">
+                <h3>세스코 본사</h3>
+                <p>(도로명)서울특별시 강동구 강일동 상일로10길 46번지 세스코 터치센터</p>
+                <div class="maparea">
+                    <div id="map" style="width:100%;height:380px;"></div>
+                </div>
+                <ul>
+                    <li>
+                        <h4>버스 이용 시</h4>
+                        <dl>
+                            <dt>지선버스</dt>
+                            <dd>3321번</dd>
+                        </dl>
+                        <dl>
+                            <dt>간선버스</dt>
+                            <dd>370번, 341번</dd>
+                        </dl>
+                        <dl>
+                            <dt>직행버스</dt>
+                            <dd>1113번, 1113-1번, 1113-2번, 1113-10번, 1113-11번, 9301번</dd>
+                        </dl>
+                        <dl>
+                            <dt>시외버스</dt>
+                            <dd>1004번, 8849번</dd>
+                        </dl>
+                        <dl>
+                            <dt>일반버스</dt>
+                            <dd>13번 13-2번, 30번, 30-1번, 30-3번, 1-4번, 23번, 112-1번, 112-5번, 16번</dd>
+                        </dl>
+                        <dl>
+                            <dt>마을버스</dt>
+                            <dd>6-1번</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <h4>지하철 이용 시</h4>
+                        <dl>
+                            <dt>강일역</dt>
+                            <dd>5호선 강일역 4번출구에서 1161m</dd>
+                        </dl>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+        <footer id="footerArea">
+            <div class="footer_inner">
+                <a class="topMove" href="#"><span class="hidden">top</span><i class="fas fa-chevron-up"></i></a> 
+                <div class="footer_top">
+                    <ul class="terms">
+                        <li>
+                            <a href="#a">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#a">전자금융거래이용약관</a>
+                        </li>
+                    </ul>
+                    <div class="footer_family">
+                        <a class="arrow" href="#">FAMILY SITE<i class="fas fa-chevron-down"></i><span class="hidden">sort-down</span></a>
+                        <ul class="family_list">
+                            <li><a href="https://www.cescofood.co.kr/CescoFs/" target="_blank" title="새창에 열림">세스코 식품안전</a></li>
+                            <li><a href="https://mall.cesco.co.kr/Shop/Main/" target="_blank" title="새창에 열림">세스코 쇼핑몰</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <address>
+                        <span>(주)세스코</span>
+                        대표이사 : 사장 정찬혁 | 고객센터 : 1588-1119<br>주소 : 서울시 강동구 상일로 10길 46 세스코 터치센터<br>(평일 08:30 ~ 18:00  토요일 08:30 ~ 15:00)
+                        <span>COPYRIGHT 2021 CESCO.ALL RIGHTS RESERVEL</span>
+                    </address>
+                    <div class="footer_bottom">
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCLlmPgLTZIegLvxx2buhznw" target="_blank" title="새창에 열림">
+                                    <span class="hidden" >유튜브</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ko-kr.facebook.com/CESCO15881119" target="_blank" title="새창에 열림">
+                                    <span class="hidden">페이스북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cesco_kr/" target="_blank" title="새창에 열림">
+                                    <span class="hidden">인스타</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+ 
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/common.js"></script>
+ 
+</body>
+</html>

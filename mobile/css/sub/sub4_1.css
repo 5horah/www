@@ -1,0 +1,20 @@
+/*컨텐츠 영역*/
+#content .content_area1 h3{margin-bottom: 0;}
+.tab_menu{height: 55px; color: #fff; background: #1979bd; font-size: 1.143rem; padding: 0 40px 0 0; position: relative; text-align: left; margin-top: 24px;}
+.tab_menu span{display: block; position: absolute; top: 50%; left: 20px; margin-top: -12.6px;}
+.tab_menu i{position: absolute; right: 20px; top: 50%; margin-top: -8.4px;}
+.tab_menu ul{width: 100%; position: absolute; top: 55px; background: rgba(255, 255, 255, .9); border: 1px solid #1979bd; box-sizing: border-box; box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 5%); display: none; z-index: 10;}
+.tab_menu ul .tab{display: block; padding: 10px 0 10px 20px; color: #666;}
+
+#content .tab_content .contlist{margin-bottom: 50px;}
+#content .tab_content .contlist h4{font-weight: 700; font-size: 1.429rem; color: #333; margin-top: 50px;}
+#content .tab_content .all{float: right; color: #1979bd; padding: 24px; font-weight: 500; font-size: 1.143rem;}
+#content .tab_content .all i{margin-left: 8px;}
+#content .tab_content .contlist ul{margin-bottom: 50px;}
+#content .tab_content .contlist li{padding: 18px; background: #f8f8f8; border-radius: 8px; margin: 0 20px 16px; clear: both; text-align: left;}
+#content .tab_content .contlist li .q .trigger{display:block; position: relative;}
+#content .tab_content .contlist li .q .trigger span{display:block; font-weight: 500; font-size: 1.286rem; color: #333; position: relative; overflow: hidden; padding: 0 28px 0 27.66px;}
+#content .tab_content .contlist li .q .trigger span::before{content: 'Q.'; display: inline-block; font-family: 'Roboto', sans-serif; font-weight: 700; margin-right: 10px; color: rgba(25, 121, 187, .8); text-align: left; position: absolute; left: 0; top: 2px}
+#content .tab_content .contlist li .q .trigger i{color: #999; margin-top: 4px; position: absolute; top: 50%; right: 0; margin-top: -6.8px;}
+#content .tab_content .contlist li .a{font-size: 1.143rem; color: #666; position: relative; padding: 16px 15px 16px 47.66px;; line-height:1.5em; text-align: justify; overflow:hidden; display: none;}
+#content .tab_content .contlist li .a::before{content: ''; display: inline-block; width: 2px; height: 80%; background: rgba(25, 121, 187, .6); position: absolute; left: 27.66px; top: 10%;}

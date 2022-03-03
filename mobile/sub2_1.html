@@ -1,0 +1,382 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name = "format-detection" content = "telephone=no">
+
+<title>서비스경영-세스코솔루션</title>
+
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+<link rel="stylesheet" href="./css/sub/sub_common.css">
+<link rel="stylesheet" href="./css/sub/sub2_1.css">
+
+
+<script src="js/prefixfree.min.js"></script>
+
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea">
+            <!-- 아래있는 header_top한테 overflow -->
+            <div class="header_top">
+                <h1><a href="index.html">세스코 로고</a></h1>
+                <a class="menu_open" href="#"><span>햄버거 메뉴</span></a>
+            </div>
+            <div class="modal_box"></div>   
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션영역</h2>
+                <h3><a href="index.html">세스코 로고</a></h3>
+                <ul class="login">
+                    <?
+                        if(!$userid){ //로그아웃(세션변수X)
+                    ?>
+                    <li><h3><a href="./member/member_check.html">회원가입</a></h3></li>
+                    <li><h3><a href="./login/login_form.php">로그인</a></h3></li>
+                    <?
+                        }else{ //로그인(세션변수O)
+                    ?>
+                    <li class="login_af">
+                        <i class="fas fa-user-circle"></i><span class="hidden">사용자 프로필</span>
+                        <h3><a href="./member/member_form_modify.php"><strong><?=$usernick?></strong>님 <span class="hidden">마이페이지</span><i class="fas fa-cog"></i></a></h3>
+                    </li>
+                    <li class="login_af"><h3><a href="./login/logout.php">로그아웃</a></h3></li>
+                    <?
+                        }
+                    ?>
+                </ul>
+                <ul class="mainMenu">
+                    <li class="depth1"><h3><a href="#">기업소개 <span>About Cesco</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub1_1.html">기업정보</a></li>
+                            <li><a href="sub1_2.html">연혁</a></li>
+                            <li><a href="sub1_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">서비스경영 <span>Management</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub2_1.html">세스코솔루션</a></li>
+                            <li><a href="sub2_2.html">세스코서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">기업경쟁력 <span>competitivity</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub3_1.html">세스코경쟁력</a></li>
+                            <li><a href="sub3_2.html">세스코멤버스</a></li>
+                            <li><a href="sub3_3.html">시험분석</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1 last"><h3><a href="#">고객센터 <span>Center</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub4_1.html">자주묻는질문</a></li>
+                            <li><a href="sub4_2.html">AS서비스안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="visual ServiceMenagment">
+            <div class="visual_text">
+                <h3>SERVICE MENAGMENT</h3>
+                <p>여러분의 고민 CESCO가 해결해드립니다.</p>
+            </div>
+        </div>
+        <div class="sub_menu ServiceMenagment_menu">
+            <ul>
+                <li class="current"><a href="./sub2_1.html">세스코솔루션</a></li>
+                <li><a href="./sub2_2.html">세스코서비스</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <h2>세스코솔루션</h2>    
+            <div class="content_area1">
+                <h3>SOLUTION</h3>
+                <ul class="tab_menu">
+                    <li><a class="tab tab1" href="#">통합해충방제</a></li>
+                    <li><a class="tab" href="#">통합이물분석</a></li>
+                    <li><a class="tab" href="#">식품안전</a></li>
+                </ul>
+                <div class="tab_content">
+                    <div class="conlist">
+                        <h3 class="hidden">통합해충방제</h3>
+                        <div>
+                            <p>
+                                <span>1:1 맞춤 통합방제솔루션</span>
+                                발생 장소의 환경적 요인을 전문가가 정확히 진단, 1:1 통합 맞춤 방제 솔루션을 제공하여 해충 문제를 해결해 드립니다.
+                            </p>
+                            <img src="./images/sub2/conlist1_img1.png" alt="1:1 맞춤통합방제솔루션 관련 이미지">
+                            <ul>
+                                <li>
+                                    <img src="./images/sub2/conlist1_icon1.png" alt="관리시스템 아이콘">
+                                    <p><span>관리시스템</span>해충인프라 기반 솔루션</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist1_icon2.png" alt="컨설팅 아이콘">
+                                    <p><span>컨설팅</span>해충 전문가 컨설팅</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist1_icon3.png" alt="분석보고 아이콘">
+                                    <p><span>분석보고</span>실시간 온라인 보고 시스템</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist1_icon4.png" alt="이물분석 아이콘">
+                                    <p><span>이물분석</span>신속한 클레임 처리 가능</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                <span>2,193가지 노하우로 진행</span>
+                                위생문제와 경제적 손실를 일으키는 해충을 맞춤 방제솔루션을 통해 고객의 생활공간이 청정공간이 되도록 지켜드립니다.
+                            </p>
+                            <img src="./images/sub2/conlist1_img2.png" alt="2,193가지 노하우 관련 이미지">
+                        </div>
+                        <div>
+                            <p>
+                                <span>세스코 통합해충방제 솔루션</span>
+                                해충방제 서비스 컨설턴트가 해충방제에 대한 맞춤 방제솔루션을 제시합니다.
+                            </p>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt><span>STEP01</span>사전조사 및 진단</dt>
+                                        <dd>문제 해충의 종류 및 생장 주기, 서식지, 성별파악 침입 및 이동경로 파악</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span>STEP02</span>처방</dt>
+                                        <dd>세스코 IPM 기술연구소에서 자체 개발 생산된 1:1 맞춤 방제 약제 시스템을 적용</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span>STEP03</span>초기 집중퇴치 서비스</dt>
+                                        <dd>처방된 약제의 투약 및 방제솔루션 적용 및 시설 보완 컨설팅</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span>STEP04</span>정기관리 서비스</dt>
+                                        <dd>지속적인 문제 해충 현황 파악으로 해충 재발 시 신속한 무료 출동</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="conlist">
+                        <h3 class="hidden">통합이물분석</h3>
+                        <div>
+                            <p>
+                                <span>국내 유일, 이물전문 분석센터</span>
+                                제품에 혼입된 이물의 실체를 명확히 밝혀 혼입 원인 규명 및 재발 방지 대책을 구립할 수있도록 지원드리겠습니다.
+                            </p>
+                            <ul>
+                                <li>
+                                    <img src="./images/sub2/conlist2_icon1.png" alt="동물성 이물 아이콘">
+                                    <p><span>동물성 이물</span>곤충, 동물사체 등</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist2_icon2.png" alt="식물성 이물 아이콘">
+                                    <p><span>식물성 이물</span>식물조직 등</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist2_icon3.png" alt="광물성 이물 아이콘">
+                                    <p><span>광물성 이물</span>금속, 조각 등 </p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist2_icon4.png" alt="기기 분석 아이콘">
+                                    <p><span>기기 분석</span>GC분석 등</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist2_icon5.png" alt="생물학 분석 아이콘">
+                                    <p><span>생물학 분석</span>현미경 검사 등</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist2_icon6.png" alt="화학적 분석 아이콘">
+                                    <p><span>화학적 분석</span>화학 등 반응검사</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                <span>세스코 이물분석이 필요한 이유</span>
+                                30여 가지 과학적 연구 기법과 전문 분석 장비를 통한 원스탑 통합이물분석 서비스로 피해를 줄이고 예방해 드립니다.
+                            </p>
+                            <img src="./images/sub2/conlist2_img1.png" alt="세스코 이물분석이 필요한 이유 관련 이미지">
+                        </div>
+                        <div>
+                            <p>
+                                <span>세스코 통합이물분석 서비스</span>
+                                이물분석 전문가 그룹이 30여 가지 정밀 분석 시스템을 가동하여 제품에 혼입된 이물의 실체를 명확히 분석합니다.
+                            </p>
+                            <img src="./images/sub2/conlist2_img2.png" alt="세스코 통합이물분석 서비스 관련 이미지">
+                            <ul>
+                                <li>
+                                    <strong><span>STEP01</span>분석의뢰</strong>
+                                    <p>홈페이지 접수</p>
+                                </li>
+                                <li>
+                                    <strong><span>STEP02</span>샘플확인</strong>
+                                    <p>테스트 항목 결정</p>
+                                </li>
+                                <li>
+                                    <strong><span>STEP03</span>분석상담</strong>
+                                    <p>항목 및 비용 안내</p>
+                                </li>
+                                <li>
+                                    <strong><span>STEP04</span>분석진행</strong>
+                                    <p>원스탑 분석 진행</p>
+                                </li>
+                                <li>
+                                    <strong><span>STEP05</span>결과진행</strong>
+                                    <p>시험성적서 발송</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="conlist">
+                        <h3 class="hidden">식품안전</h3>
+                        <div>
+                            <p>
+                                <span>음식점과 신선함을 지키는 약속</span>
+                                믿을 수 있는 깨끗한 환경은 업장을 방문하는 고객들에게 또 다른 선택 기준이 되었습니다.
+                            </p>
+                            <img src="./images/sub2/conlist3_img1.png" alt="음식점과 신선함을 지키는 약속 관련 이미지">
+                            <ul>
+                                <li>
+                                    <img src="./images/sub2/conlist3_icon1.png" alt="식품안전 위생진단 아이콘">
+                                    <p><span>위생진단</span>위생 솔루션<br>위생진단</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist3_icon2.png" alt="시험분석 아이콘">
+                                    <p><span>시험분석</span>위해요소분석<br>자가품질분석</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist3_icon3.png" alt="식품안전요소">
+                                    <p><span>식품안전요소</span>HACCP 교육<br>식품전문 교육</p>
+                                </li>
+                                <li>
+                                    <img src="./images/sub2/conlist3_icon4.png" alt="컨설팅">
+                                    <p><span>컨설팅</span>식품안전<br>HACCP 컨설팅</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                <span>세스코 서비스가 특별한 이유</span>
+                                다양한 업종별, 환경별로 발생 가능한 문제에 대해 고객별 맞춤형 솔루션을 제시해 드릴 수 있기 때문입니다.
+                            </p>
+                            <img src="./images/sub2/conlist3_img2.png" alt="세스코 식품안전 서비스가 특별한 이유 관련 이미지">
+                        </div>
+                        <div>
+                            <p>
+                                <span>세스코 토탈 식품안전 솔루션</span>
+                                세스코의 축적된 위생활경 노하우와 식품 안전 연구소의 첨단 시스템 운영으로 솔루션을 제공합니다.
+                            </p>
+                            <img src="./images/sub2/conlist3_img3.png" alt="세스코 토탈 식품안전 솔루션">
+                            <ul>
+                                <li>
+                                    <p><span>STEP01</span>외식업장의 사업을 돕는 식품안전 컨설턴트가 찾아갑니다.</p>
+                                </li>
+                                <li>
+                                    <p><span>STEP02</span>식품안전 위해요소를 철저히 진단합니다.</p>
+                                </li>
+                                <li>
+                                    <p><span>STEP03</span>맞춤형 컨설팅을 통해 사업장이 업그레이드 됩니다.</p>
+                                </li>
+                                <li>
+                                    <p><span>STEP04</span>다양한 프로그램으로 깨끗한 맛집으로 알려지게 됩니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer id="footerArea">
+            <div class="footer_inner">
+                <a class="topMove" href="#"><span class="hidden">top</span><i class="fas fa-chevron-up"></i></a> 
+                <div class="footer_top">
+                    <ul class="terms">
+                        <li>
+                            <a href="#a">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#a">전자금융거래이용약관</a>
+                        </li>
+                    </ul>
+                    <div class="footer_family">
+                        <a class="arrow" href="#">FAMILY SITE<i class="fas fa-chevron-down"></i><span class="hidden">sort-down</span></a>
+                        <ul class="family_list">
+                            <li><a href="https://www.cescofood.co.kr/CescoFs/" target="_blank" title="새창에 열림">세스코 식품안전</a></li>
+                            <li><a href="https://mall.cesco.co.kr/Shop/Main/" target="_blank" title="새창에 열림">세스코 쇼핑몰</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <address>
+                        <span>(주)세스코</span>
+                        대표이사 : 사장 정찬혁 | 고객센터 : 1588-1119<br>주소 : 서울시 강동구 상일로 10길 46 세스코 터치센터<br>(평일 08:30 ~ 18:00  토요일 08:30 ~ 15:00)
+                        <span>COPYRIGHT 2021 CESCO.ALL RIGHTS RESERVEL</span>
+                    </address>
+                    <div class="footer_bottom">
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCLlmPgLTZIegLvxx2buhznw" target="_blank" title="새창에 열림">
+                                    <span class="hidden" >유튜브</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ko-kr.facebook.com/CESCO15881119" target="_blank" title="새창에 열림">
+                                    <span class="hidden">페이스북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cesco_kr/" target="_blank" title="새창에 열림">
+                                    <span class="hidden">인스타</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+ 
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/sub/tab.js"></script>
+ 
+</body>
+</html>

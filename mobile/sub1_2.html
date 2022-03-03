@@ -1,0 +1,292 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name = "format-detection" content = "telephone=no">
+
+<title>기업소개-연혁</title>
+
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+<link rel="stylesheet" href="./css/sub/sub_common.css">
+<link rel="stylesheet" href="./css/sub/sub1_2.css">
+
+
+<script src="js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea">
+            <!-- 아래있는 header_top한테 overflow -->
+            <div class="header_top">
+                <h1><a href="index.html">세스코 로고</a></h1>
+                <a class="menu_open" href="#"><span>햄버거 메뉴</span></a>
+            </div>
+            <div class="modal_box"></div>   
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션영역</h2>
+                <h3><a href="index.html">세스코 로고</a></h3>
+                <ul class="login">
+                    <?
+                        if(!$userid){ //로그아웃(세션변수X)
+                    ?>
+                    <li><h3><a href="./member/member_check.html">회원가입</a></h3></li>
+                    <li><h3><a href="./login/login_form.php">로그인</a></h3></li>
+                    <?
+                        }else{ //로그인(세션변수O)
+                    ?>
+                    <li class="login_af">
+                        <i class="fas fa-user-circle"></i><span class="hidden">사용자 프로필</span>
+                        <h3><a href="./member/member_form_modify.php"><strong><?=$usernick?></strong>님 <span class="hidden">마이페이지</span><i class="fas fa-cog"></i></a></h3>
+                    </li>
+                    <li class="login_af"><h3><a href="./login/logout.php">로그아웃</a></h3></li>
+                    <?
+                        }
+                    ?>
+                </ul>
+                <ul class="mainMenu">
+                    <li class="depth1"><h3><a href="#">기업소개 <span>About Cesco</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub1_1.html">기업정보</a></li>
+                            <li><a href="sub1_2.html">연혁</a></li>
+                            <li><a href="sub1_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">서비스경영 <span>Management</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub2_1.html">세스코솔루션</a></li>
+                            <li><a href="sub2_2.html">세스코서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">기업경쟁력 <span>competitivity</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub3_1.html">세스코경쟁력</a></li>
+                            <li><a href="sub3_2.html">세스코멤버스</a></li>
+                            <li><a href="sub3_3.html">시험분석</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1 last"><h3><a href="#">고객센터 <span>Center</span><i class="fas fa-plus"></i><span class="hidden">더보기</span></a></h3>
+                        <ul>
+                            <li><a href="sub4_1.html">자주묻는질문</a></li>
+                            <li><a href="sub4_2.html">AS서비스안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="visual AboutCesco">
+            <div class="visual_text">
+                <h3>ABOUT CESCO</h3>
+                <p>깨끗한 환경으로 건강한 내일을 약속드립니다.</p>
+            </div>
+        </div>
+        <div class="sub_menu AboutCesco_menu">
+            <ul>
+                <li><a href="./sub1_1.html">기업정보</a></li>
+                <li class="current"><a href="./sub1_2.html">연혁</a></li>
+                <li><a href="./sub1_3.html">오시는길</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <h2>연혁</h2>    
+            <div class="content_area1">
+                <h3>HISTORY</h3>
+                <ul class="tab_menu">
+                    <li><a class="tab tab1" href="#">창업기</a></li>
+                    <li><a class="tab" href="#">도약기</a></li>
+                    <li><a class="tab" href="#">성장기</a></li>
+                    <li><a class="tab" href="#">혁신기</a></li>
+                </ul>
+                <div class="tab_content">
+                    <div class="conlist">
+                        <h3 class="hidden">창업기(1976 ~ 1995)</h3>
+                        <dl>
+                            <dt>1976</dt>
+                            <dd><span>1976.08</span>회사설립 등기(전우방제공업주식회사)</dd>
+                        </dl>
+                        <dl>
+                            <dt>1979</dt>
+                            <dd><span>1979.01</span>국제방역협회(NPCA) 가입</dd>
+                            <dd><span>1979.10</span>본사 이전(서울 강남구 삼성동)</dd>
+                        </dl>
+                        <dl>
+                            <dt>1983</dt>
+                            <dd><span>1983.10</span>기술연구소 준공(경기도 안산시 반월공단)</dd>
+                        </dl>
+                        <dl>
+                            <dt>1993</dt>
+                            <dd><span>1993.03</span>성실 납세 의무 모범 표창장 수상(강동세무서장)</dd>
+                            <dd><span>1993.04</span>전순표 회장, 국민훈장 목련장 수상</dd>
+                            <dd><span>1993.09</span>아·태방역협회 회장 취임</dd>
+                            <dd><span>1993.10</span>전순표 회장 (사)한국방역협회 회장 재선임</dd>
+                        </dl>
+                        <dl>
+                            <dt>1994</dt>
+                            <dd><span>1994.01</span>전 업무 전산화 도입</dd>
+                            <dd><span>1994.08</span>대전엑스포 공로상 수상(상공자원부 장관)</dd>
+                        </dl>
+                        <dl>
+                            <dt>1995</dt>
+                            <dd><span>1995.03</span>팀제 운영 도입</dd>
+                            <dd><span>1995.05</span>제 1기 전우맨 방제기술 교육 실시</dd>
+                            <dd><span>1995.10</span>아·태방역협회 서울 총회 주관(~10/25)</dd>
+                        </dl>
+                    </div>
+                    <div class="conlist">
+                        <h3 class="hidden">도약기(1996 ~ 2005)</h3>
+                        <dl>
+                            <dt>1996</dt>
+                            <dd><span>1996.06</span>재창업 CI 발대식, 병자년 쥐·바퀴 위령제 개최(동국대 만해광장</dd>
+                        </dl>
+                        <dl>
+                            <dt>1997</dt>
+                            <dd><span>1997.04</span>전순표 회장 아·태방역협회 종신제 명예회장 추대</dd>
+                            <dd><span>1997.07</span>전산시스템 세스넷(CESNET)개통</dd>
+                        </dl>
+                        <dl>
+                            <dt>1999</dt>
+                            <dd><span>1999.11</span>방제서비스 전 분야 국제표준규격 ISO 9002 인증 획득</dd>
+                        </dl>
+                        <dl>
+                            <dt>2003</dt>
+                            <dd><span>2003.09</span>중국 상해 현지법인 설립</dd>
+                        </dl>
+                        <dl>
+                            <dt>2004</dt>
+                            <dd><span>2004.12</span>보건복지부 표창(전염병관리 우수기업)</dd>
+                        </dl>
+                    </div>
+                    <div class="conlist">
+                        <h3 class="hidden">성장기(2006 ~ 2015)</h3>
+                        <dl>
+                            <dt>2007</dt>
+                            <dd><span>2007.05</span>세스코 멤버스존 런칭</dd>
+                        </dl>
+                        <dl>
+                            <dt>2009</dt>
+                            <dd><span>2009.02</span>PG 시스템 가동</dd>
+                            <dd><span>2009.03</span>인공지능 방제시스템 '세스넷2.0'구축</dd>
+                            <dd><span>2009.08</span>중평 자이오·물류 공장 설립, 약제 생산 본격화</dd>
+                            <dd><span>2009.11</span>지역본부제 시행</dd>
+                            <dd><span>2009.12</span>비래해충용 포충장비'피닉스','썬더블루'론칭</dd>
+                        </dl>
+                        <dl>
+                            <dt>2013</dt>
+                            <dd><span>2013.01</span>표준업무 메뉴얼 'CAWS'구축</dd>
+                            <dd><span>2013.03</span>구서용 실내 장비 '바이퍼', '블루치즈'개발</dd>
+                            <dd><span>2013.12</span>식품안전교육센터 오픈</dd>
+                        </dl>
+                        <dl>
+                            <dt>2014</dt>
+                            <dd><span>2014.02</span>중국 서안지사 설립</dd>
+                            <dd><span>2014.11</span>세스코 터치센터 설립, 사옥 이전</dd>
+                            <dd><span>2014.11</span>이물분석센터 출범</dd>
+                            <dd><span>2014.12</span>베트남 호치민지사</dd>
+                        </dl>
+                        <dl>
+                            <dt>2015</dt>
+                            <dd><span>2015.02</span>중국 광주지사 설립</dd>
+                            <dd><span>2015.07</span>환경위생용품 론칭</dd>
+                            <dd><span>2015.08</span>바이러스·박테리아 살균 전문 서비스 프로그램 실시</dd>
+                            <dd><span>2015.11</span>증평공장 증설'CESCO Tech Valley'구축</dd>
+                        </dl>
+                    </div>
+                    <div class="conlist">
+                        <h3 class="hidden">혁신기(2016 ~ 현재)</h3>
+                        <dl>
+                            <dt>2016</dt>
+                            <dd><span>2016.03</span>전순표 회장, 금찹산업훈장 수훈</dd>
+                            <dd><span>2016.03</span>이물분석센터, 국제공인시험기관 KOLAS 인증</dd>
+                            <dd><span>2016.04</span>전찬혁 대표이사 사장, 제3회 창업 선언</dd>
+                            <dd><span>2016.04</span>베트남 하노이지사 설립</dd>
+                            <dd><span>2016.05</span>식품위생 인증마크 '화이트 세스코'론칭</dd>
+                            <dd><span>2016.12</span>창립 40주년 행사 및 신사업 브랜드 선포식</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer id="footerArea">
+            <div class="footer_inner">
+                <a class="topMove" href="#"><span class="hidden">top</span><i class="fas fa-chevron-up"></i></a> 
+                <div class="footer_top">
+                    <ul class="terms">
+                        <li>
+                            <a href="#a">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#a">전자금융거래이용약관</a>
+                        </li>
+                    </ul>
+                    <div class="footer_family">
+                        <a class="arrow" href="#">FAMILY SITE<i class="fas fa-chevron-down"></i><span class="hidden">sort-down</span></a>
+                        <ul class="family_list">
+                            <li><a href="https://www.cescofood.co.kr/CescoFs/" target="_blank" title="새창에 열림">세스코 식품안전</a></li>
+                            <li><a href="https://mall.cesco.co.kr/Shop/Main/" target="_blank" title="새창에 열림">세스코 쇼핑몰</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <address>
+                        <span>(주)세스코</span>
+                        대표이사 : 사장 정찬혁 | 고객센터 : 1588-1119<br>주소 : 서울시 강동구 상일로 10길 46 세스코 터치센터<br>(평일 08:30 ~ 18:00  토요일 08:30 ~ 15:00)
+                        <span>COPYRIGHT 2021 CESCO.ALL RIGHTS RESERVEL</span>
+                    </address>
+                    <div class="footer_bottom">
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCLlmPgLTZIegLvxx2buhznw" target="_blank" title="새창에 열림">
+                                    <span class="hidden" >유튜브</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ko-kr.facebook.com/CESCO15881119" target="_blank" title="새창에 열림">
+                                    <span class="hidden">페이스북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cesco_kr/" target="_blank" title="새창에 열림">
+                                    <span class="hidden">인스타</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+ 
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/sub/tab.js"></script>
+ 
+</body>
+</html>

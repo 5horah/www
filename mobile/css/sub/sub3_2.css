@@ -1,0 +1,27 @@
+/*컨텐츠 영역*/
+#content .content_area1>h3 span,#content .content_area2>h3 span,#content .content_area3>h3 span,#content .content_area4>h3 span{
+    display: block; color: #1979bd; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 1.143rem; margin-bottom: 4px;
+}
+
+#content .content_area1>img{width: 100%; margin-top: 24px;}
+
+#content .content_area2{background: #f8f8f8; padding: 50px 20px 42px;}
+#content .content_area2 h3{margin-bottom: 24px;}
+#content .content_area2 li{position: relative;}
+#content .content_area2 li:nth-child(1)::before{content: '01'; display: inline-block; font-size: 5em; color: rgba(153, 153, 153, .1); position: absolute; top: -50px; left: 38.5%;}
+#content .content_area2 li:nth-child(2)::before{content: '02'; display: inline-block; font-size: 5em; color: rgba(153, 153, 153, .1); position: absolute; top: -50px; left: 38.5%;}
+#content .content_area2 li:nth-child(3)::before{content: '03'; display: inline-block; font-size: 5em; color: rgba(153, 153, 153, .1); position: absolute; top: -50px; left: 38.5%;}
+#content .content_area2 p{font-weight: 400; font-size: 1.143rem; line-height: 1.5em; color: #666}
+#content .content_area2 p span{display: block; font-weight: 500; font-size: 1.286rem; color: #1979bd; margin: 43px 0 10px;}
+#content .content_area2 img{width: 100%; margin: 16px 0 8px;}
+
+#content .content_area3 .swiper,#content .content_area4 .swiper{margin-top: 24px; position: relative;}
+#content .content_area3 .swiper img,#content .content_area4 .swiper img{width: 100%;}
+
+.information{background: #f8f8f8; padding: 50px 20px; border-top: 1px solid#1979bd; border-bottom: 1px solid #1979bd; margin-top: 24px; text-align: left;}
+.information h4{font-size: 1.286rem; margin-bottom: 16px; font-weight: 700; color: #1979bd;}
+.information ol{font-size: 1.143rem; line-height: 1.5em; color: #666;}
+.information ol:first-of-type{margin-bottom: 32px;}
+.information ol li{position: relative; margin: 0 0 8px 24px; line-height: 1.5em;}
+.information ol li::before{content: ''; width: 4px; height: 4px; background: #666; border-radius: 100%; position: absolute; left: -24px; top: 16px;}
+.content_area4 .information{margin-bottom: 50px;}
